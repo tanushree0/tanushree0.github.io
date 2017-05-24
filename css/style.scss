@@ -1,0 +1,360 @@
+@import "susy";
+@import "normalize";
+@import "skeleton";
+
+@import "variables"; // import variables first. it is being used by 'base'.
+
+@import "base";
+
+
+.wrapper {
+  @include container();
+  max-width: 990px;
+  padding: 0 20px; // padding on the right and left, so that the content does not stick to the margins on screens width<950px
+  @include cf;
+}
+
+.section {
+  margin-bottom: $section-margin-bottom;
+}
+
+header {
+  //border-bottom: 1px solid #f1f1f1;
+  padding: $vertical-margin-small 0 0 0;
+  z-index: 100;
+}
+
+.home .hero {
+  margin: $vertical-margin-small*2 0 $vertical-margin-small*2 0;
+}
+
+
+
+span.highlight {
+  background: #222222;
+  color: #f8f8f8;
+  padding: 0 4px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+
+header {
+
+  background: white; //because the header is fixed
+  .wrapper {
+    //background: $text-color-black;
+    //border-bottom: 3px solid lighten($heading-grey, 15%);
+  }
+
+
+ .flex-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+  h1 {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+
+  .nav {
+    display: inline-block;
+    width: 70%; /* this number is arbitrarily chosen as something that works for small screen sizes as well.
+    If I remove this width, the nav width becomes too small to even contain the li items. This is a hack; I do not know
+    a better solution yet. Ideally we shouldn't need to set the width explicitly */
+
+    ul {
+      text-align: right;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      display: inline-block;
+      margin-left: $horizontal-margin-small;
+
+
+    }
+
+    li a{
+      text-decoration: none;
+      color: $nav-menu-grey;
+
+      &:hover {
+        color: $nav-menu-highlighted-black;
+      }
+    }
+  }
+}
+
+
+
+
+
+.home {
+  .hero p {
+    font-size: 3rem;
+  }
+
+  .skills {
+
+    /* Using combination of flexbox and susy to get the three skills boxes of equal height (and the length of the content
+    is fluid)
+    Followed as described here: https://codepen.io/michellebarker/post/flexbox-layouts-with-susy */
+    display: flex;
+    justify-content: space-between;
+
+    div {
+      width: span(2 of 6);
+      font-size: 2.0rem;
+      border-radius: 0.1em;
+
+      padding: $horizontal-padding;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+
+
+    h5 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 600;
+      text-align: center;
+    }
+  }
+
+  .coding {
+    background: rgba(197, 225, 235, 0.9);
+    &:hover {
+      background: rgb(207, 235, 245);
+    }
+  }
+
+  .design {
+    background: rgba(220, 216, 226, 0.91);
+    &:hover {
+      background: rgb(232, 228, 238);
+    }
+  }
+
+  .listening {
+    background: rgba(233, 196, 207, 0.9);
+    &:hover {
+      background: rgb(243, 206, 217);
+    }
+  }
+
+
+}
+
+.about-me {
+
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+
+    .photo {
+      width: span(2 of 6);
+      background: url("../images/photo_me.jpg");
+      background-position: center 15%;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      opacity: 1.0;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+
+    .text {
+      width: span(4 of 6);
+
+
+
+    }
+  }
+
+}
+
+.projects {
+
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .clients {
+    width: span(2 of 6);
+    border: 3px solid rgba(197, 225, 235, 0.91);
+    padding:$horizontal-padding;
+
+    .client-logo {
+      display: inline-block;
+      margin-bottom: $vertical-margin-small;
+    }
+
+    img {
+      height: 5rem;
+      margin-right: $horizontal-margin-small;
+      vertical-align: middle;
+      opacity: 0.8;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+
+  }
+
+  .links-to-work {
+    width: span(4 of 6);
+    background: $color-blue;
+
+    p {
+      font-size: 2.5rem;
+      padding: $horizontal-padding;
+      padding-bottom: 0;
+    }
+
+    .projects-proxy-container {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .project-proxy {
+      height: 10rem; line-height: 10rem;
+
+      border: 1px solid darken($color-blue, 10%);
+      border-radius: 3px;
+      width: span(1 of 3);
+
+      margin-left: gutter();
+      text-align: center;
+      color:darken($color-heading-grey, 40%);
+      background: #fafafa;
+
+
+      &:hover {
+        color: darken($color-heading-grey, 80%);
+        background: white;
+      }
+
+    }
+  }
+}
+
+
+footer {
+  //background: rgba(249, 212, 223, 0.9);
+
+  .flex-container {
+    background: $color-heading-grey;
+    padding-bottom: $vertical-margin-small;
+    padding-top: $vertical-margin-small;
+
+  }
+
+  .flex-container {
+    //background: rgba(233, 196, 207, 0.9);
+    .icon {
+      vertical-align: middle;
+
+      color: $color-text-black;
+      font-size: 3rem;
+      margin: 20px;
+    }
+  }
+
+  .contact {
+    width: span(2 of 6);
+  }
+  .social-media-copyright {
+    width: span(2 of 6);
+  }
+
+}
+
+
+
+/* Styles for Mobile and Tablet */
+
+@media (max-width: 750px) {
+
+  html {
+    font-size: 43%; // as compared to 62.5% for the desktop. All dimensions based on rems will be calculated accordingly.
+    // we have set most heights, margin, font-size in rems.
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+
+  header {
+    .flex-container {
+      flex-direction: row;
+    }
+  }
+
+  .home {
+    .skills div {
+      width: span(6 of 6);
+      margin-bottom: $vertical-margin-small;
+    }
+  }
+
+
+  .about-me {
+    .flex-container {
+      flex-direction: column-reverse;
+
+      .text {
+        width: span(6 of 6);
+      }
+
+      .photo {
+        width: span(4 of 6);
+        height: 200px;
+        margin-bottom: $vertical-margin-small;
+      }
+    }
+  }
+
+  .projects {
+    .links-to-work, .clients {
+      width: span(6 of 6);
+    }
+
+    .projects-proxy-container {
+      margin-bottom: $vertical-margin-small;
+    }
+
+  }
+
+}
+
+/* Styles for Tablet */
+
+@media (min-width:550px) and (max-width:750px) {
+
+  html {
+    font-size: 57%;
+  }
+
+  .about-me .flex-container .photo {
+    width: span(3 of 6);
+    height: 250px;
+  }
+
+}

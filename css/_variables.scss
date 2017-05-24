@@ -1,0 +1,31 @@
+/***********
+colors
+************/
+
+$color-pink: rgba(233, 196, 207, 0.9);
+$color-pink-highlighted: rgb(243, 206, 217);
+
+$color-blue: rgba(197, 225, 235, 0.9);
+$color-blue-highlighted: rgb(207, 235, 245);
+
+$color-mauve: rgba(220, 216, 226, 0.91);
+$color-mauve-highlighted: rgb(232, 228, 238);
+
+$color-text-black: #444;
+$color-heading-grey: rgba(191, 191, 191, 0.49);
+
+$nav-menu-grey: rgba(109, 109, 109, 0.52);
+$nav-menu-highlighted-black: black;
+
+
+
+
+/***********
+Dimensions: lengths and widths
+************/
+
+$section-margin-bottom: 5rem;
+$vertical-margin-small: 2.5rem; // same as the margin-bottom for p element
+
+$horizontal-margin-small: 3.5rem; // same as gutter width
+$horizontal-padding: 2.5rem; //same as vertical margins
