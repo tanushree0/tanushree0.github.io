@@ -816,7 +816,7 @@ header {
     margin-bottom: 0; }
   header .nav {
     display: inline-block;
-    width: 70%;
+    width: 90%;
             /* this number is arbitrarily chosen as something that works for small screen sizes as well.
 If I remove this width, the nav width becomes too small to even contain the li items. This is a hack; I do not know
 a better solution yet. Ideally we shouldn't need to set the width explicitly */ }
@@ -827,7 +827,7 @@ a better solution yet. Ideally we shouldn't need to set the width explicitly */ 
       margin: 0; }
     header .nav li {
       display: inline-block;
-      margin-left: 3.5rem; }
+      margin-left: 2.5rem; }
     header .nav li a {
       text-decoration: none;
       color: rgba(109, 109, 109, 0.52); }
@@ -931,7 +931,7 @@ footer .flex-container .icon {
   color: #444;
   font-size: 3rem;
   margin: 20px; }
-footer .contact {
+footer .email {
   width: 31.03448%; }
 footer .social-media-copyright {
   width: 31.03448%; }
