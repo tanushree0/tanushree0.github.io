@@ -800,6 +800,9 @@ span.highlight {
   color: #f8f8f8;
   padding: 0 4px; }
 
+/* Using combination of flexbox and susy for layout, especially helpful in creating columns of equal height (and the
+length of the content is fluid)
+Followed as described here: https://codepen.io/michellebarker/post/flexbox-layouts-with-susy */
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -808,8 +811,6 @@ span.highlight {
 header {
   background: white; }
   header .flex-container {
-    display: flex;
-    justify-content: space-between;
     align-items: center; }
   header h1 {
     display: inline-block;
@@ -836,23 +837,13 @@ a better solution yet. Ideally we shouldn't need to set the width explicitly */ 
 
 .home .hero p {
   font-size: 3rem; }
-.home .skills {
-  /* Using combination of flexbox and susy to get the three skills boxes of equal height (and the length of the content
-  is fluid)
-  Followed as described here: https://codepen.io/michellebarker/post/flexbox-layouts-with-susy */
-  display: flex;
-  justify-content: space-between; }
-  .home .skills div {
-    width: 31.03448%;
-    font-size: 2.0rem;
-    border-radius: 0.1em;
-    padding: 2.5rem; }
-    .home .skills div:hover {
-      opacity: 1; }
-  .home .skills h5 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    text-align: center; }
+.home .skills div {
+  width: 31.03448%;
+  font-size: 2.0rem;
+  border-radius: 0.1em;
+  padding: 2.5rem; }
+  .home .skills div:hover {
+    opacity: 1; }
 .home .coding {
   background: rgba(197, 225, 235, 0.9); }
   .home .coding:hover {
@@ -866,27 +857,21 @@ a better solution yet. Ideally we shouldn't need to set the width explicitly */ 
   .home .listening:hover {
     background: #f3ced9; }
 
-.about-me .flex-container {
-  display: flex;
-  justify-content: space-between; }
-  .about-me .flex-container .photo {
-    width: 31.03448%;
-    background: url("../images/photo_me.jpg");
-    background-position: center 15%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 1.0; }
-    .about-me .flex-container .photo:hover {
-      opacity: 0.9; }
-  .about-me .flex-container .text {
-    width: 65.51724%; }
+.about-me .photo {
+  width: 31.03448%;
+  background: url("../images/photo_me.jpg");
+  background-position: center 15%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 1.0; }
+  .about-me .photo:hover {
+    opacity: 0.9; }
+.about-me .text {
+  width: 65.51724%; }
 
-.projects .flex-container {
-  display: flex;
-  justify-content: space-between; }
 .projects .clients {
   width: 31.03448%;
-  border: 3px solid rgba(197, 225, 235, 0.91);
+  border: 3px solid rgba(197, 225, 235, 0.9);
   padding: 2.5rem; }
   .projects .clients .client-logo {
     display: inline-block;
@@ -926,7 +911,7 @@ footer .flex-container {
   background: rgba(191, 191, 191, 0.49);
   padding-bottom: 2.5rem;
   padding-top: 2.5rem; }
-footer .flex-container .icon {
+footer .icon {
   vertical-align: middle;
   color: #444;
   font-size: 3rem;

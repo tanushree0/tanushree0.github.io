@@ -28,24 +28,22 @@ header {
   margin: $vertical-margin-small*2 0 $vertical-margin-small*2 0;
 }
 
-
-
 span.highlight {
   background: #222222;
   color: #f8f8f8;
   padding: 0 4px;
 }
 
+/* Using combination of flexbox and susy for layout, especially helpful in creating columns of equal height (and the
+length of the content is fluid)
+Followed as described here: https://codepen.io/michellebarker/post/flexbox-layouts-with-susy */
 .flex-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-
-
 header {
-
   background: white; //because the header is fixed
   .wrapper {
     //background: $text-color-black;
@@ -54,8 +52,6 @@ header {
 
 
  .flex-container {
-   display: flex;
-   justify-content: space-between;
    align-items: center;
  }
 
@@ -80,8 +76,6 @@ header {
     li {
       display: inline-block;
       margin-left: $horizontal-padding;
-
-
     }
 
     li a{
@@ -96,21 +90,12 @@ header {
 }
 
 
-
-
-
 .home {
   .hero p {
     font-size: 3rem;
   }
 
   .skills {
-
-    /* Using combination of flexbox and susy to get the three skills boxes of equal height (and the length of the content
-    is fluid)
-    Followed as described here: https://codepen.io/michellebarker/post/flexbox-layouts-with-susy */
-    display: flex;
-    justify-content: space-between;
 
     div {
       width: span(2 of 6);
@@ -123,80 +108,57 @@ header {
         opacity: 1;
       }
     }
-
-
-
-    h5 {
-      font-family: 'Roboto', sans-serif;
-      font-weight: 600;
-      text-align: center;
-    }
   }
 
   .coding {
-    background: rgba(197, 225, 235, 0.9);
+    background: $color-blue;
     &:hover {
-      background: rgb(207, 235, 245);
+      background: $color-blue-highlighted;
     }
   }
 
   .design {
-    background: rgba(220, 216, 226, 0.91);
+    background: $color-mauve;
     &:hover {
-      background: rgb(232, 228, 238);
+      background: $color-mauve-highlighted;
     }
   }
 
   .listening {
-    background: rgba(233, 196, 207, 0.9);
+    background: $color-pink;
     &:hover {
-      background: rgb(243, 206, 217);
+      background: $color-pink-highlighted;
     }
   }
-
 
 }
 
 .about-me {
 
-  .flex-container {
-    display: flex;
-    justify-content: space-between;
+  .photo {
+    width: span(2 of 6);
+    background: url("../images/photo_me.jpg");
+    background-position: center 15%;
+    background-size: cover;
+    background-repeat: no-repeat;
 
-    .photo {
-      width: span(2 of 6);
-      background: url("../images/photo_me.jpg");
-      background-position: center 15%;
-      background-size: cover;
-      background-repeat: no-repeat;
+    opacity: 1.0;
 
-      opacity: 1.0;
-
-      &:hover {
-        opacity: 0.9;
-      }
-    }
-
-    .text {
-      width: span(4 of 6);
-
-
-
+    &:hover {
+      opacity: 0.9;
     }
   }
 
+  .text {
+    width: span(4 of 6);
+  }
 }
 
 .projects {
 
-  .flex-container {
-    display: flex;
-    justify-content: space-between;
-  }
-
   .clients {
     width: span(2 of 6);
-    border: 3px solid rgba(197, 225, 235, 0.91);
+    border: 3px solid $color-blue;
     padding:$horizontal-padding;
 
     .client-logo {
@@ -214,8 +176,6 @@ header {
         opacity: 1;
       }
     }
-
-
   }
 
   .links-to-work {
@@ -257,8 +217,6 @@ header {
 
 
 footer {
-  //background: rgba(249, 212, 223, 0.9);
-
   .flex-container {
     background: $color-heading-grey;
     padding-bottom: $vertical-margin-small;
@@ -266,16 +224,14 @@ footer {
 
   }
 
-  .flex-container {
-    //background: rgba(233, 196, 207, 0.9);
-    .icon {
+  .icon {
       vertical-align: middle;
 
       color: $color-text-black;
       font-size: 3rem;
       margin: 20px;
-    }
   }
+
 
   .email {
     width: span(2 of 6);
@@ -354,7 +310,7 @@ footer {
 
   .about-me .flex-container .photo {
     width: span(3 of 6);
-    height: 250px; 
+    height: 250px;
   }
 
 }
