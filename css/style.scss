@@ -236,14 +236,16 @@ footer {
 
   .icon {
     vertical-align: middle;
-
-    //color: $nav-menu-highlighted-black;
     font-size: 2.5rem;
     padding-right: $horizontal-padding/2;
   }
 
+  .instagram .icon {
+    padding-right: 0;
+  }
+
   .section-column {
-    width: span(2 of 6);
+    width: span(3 of 6);
   }
 
   .email {
@@ -253,9 +255,9 @@ footer {
     }
   }
 
-  .social-media {
-    text-align: center;
-  }
+  //.social-media {
+  //  text-align: center;
+  //}
 
   .copyright {
     text-align: right;
@@ -310,10 +312,7 @@ footer {
     .flex-container {
       flex-direction: row;
     }
-
-    .email-id {
-      font-size: 1.0rem;
-    }
+    
   }
 
 }
