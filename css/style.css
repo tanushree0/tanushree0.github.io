@@ -932,27 +932,26 @@ footer .social-media-copyright {
   header .flex-container {
     flex-direction: row; }
 
-  .home .skills div {
+  .section .flex-container .section-column {
     width: 100%;
     margin-bottom: 2.5rem; }
 
   .about-me .flex-container {
     flex-direction: column-reverse; }
-    .about-me .flex-container .text {
-      width: 100%; }
     .about-me .flex-container .photo {
       width: 65.51724%;
       height: 200px;
       margin-bottom: 2.5rem; }
 
-  .projects .links-to-work, .projects .clients {
-    width: 100%; }
   .projects .projects-proxy-container {
     margin-bottom: 2.5rem; } }
 /* Styles for Tablet */
 @media (min-width: 550px) and (max-width: 750px) {
   html {
-    font-size: 57%; }
+    font-size: 54%; }
+
+  .wrapper {
+    padding: 0 100px; }
 
   .about-me .flex-container .photo {
     width: 48.27586%;

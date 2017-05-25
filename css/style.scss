@@ -225,12 +225,12 @@ footer {
   }
 
   .icon {
-      vertical-align: middle;
+    vertical-align: middle;
 
-      color: $color-text-black;
-      font-size: 3rem;
-      margin: 20px;
-  }
+    color: $color-text-black;
+    font-size: 3rem;
+    margin: 20px;
+}
 
 
   .email {
@@ -263,21 +263,14 @@ footer {
     }
   }
 
-  .home {
-    .skills div {
-      width: span(6 of 6);
-      margin-bottom: $vertical-margin-small;
-    }
+  .section .flex-container .section-column {
+    width: span(6 of 6);
+    margin-bottom: $vertical-margin-small;
   }
-
 
   .about-me {
     .flex-container {
       flex-direction: column-reverse;
-
-      .text {
-        width: span(6 of 6);
-      }
 
       .photo {
         width: span(4 of 6);
@@ -288,14 +281,9 @@ footer {
   }
 
   .projects {
-    .links-to-work, .clients {
-      width: span(6 of 6);
-    }
-
     .projects-proxy-container {
       margin-bottom: $vertical-margin-small;
     }
-
   }
 
 }
@@ -305,12 +293,18 @@ footer {
 @media (min-width:550px) and (max-width:750px) {
 
   html {
-    font-size: 57%;
+    font-size: 54%;
+  }
+
+  .wrapper {
+    padding: 0 100px; 
   }
 
   .about-me .flex-container .photo {
     width: span(3 of 6);
     height: 250px;
   }
+
+
 
 }
