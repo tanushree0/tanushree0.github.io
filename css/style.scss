@@ -217,32 +217,51 @@ header {
 
 
 footer {
+
+  background: $color-mauve;
+  padding: $vertical-margin-small/2 0;
+
+  &.section {
+    margin-bottom: 0;
+  }
+
+  p, span, .icon {
+    color: darken($nav-menu-grey, 40%);
+  }
+
   .flex-container {
-    background: $color-heading-grey;
-    padding-bottom: $vertical-margin-small;
-    padding-top: $vertical-margin-small;
+    align-items: flex-end;
 
   }
 
   .icon {
     vertical-align: middle;
 
-    color: $color-text-black;
-    font-size: 3rem;
-    margin: 20px;
-}
+    //color: $nav-menu-highlighted-black;
+    font-size: 2.5rem;
+    padding-right: $horizontal-padding/2;
+  }
 
+  .section-column {
+    width: span(2 of 6);
+  }
 
   .email {
-    width: span(2 of 6);
+    p {
+      font-size: 1.3rem;
+      margin-bottom: 0;
+    }
   }
-  .social-media-copyright {
-    width: span(2 of 6);
+
+  .social-media {
+    text-align: center;
+  }
+
+  .copyright {
+    text-align: right;
   }
 
 }
-
-
 
 /* Styles for Mobile and Tablet */
 
@@ -286,6 +305,17 @@ footer {
     }
   }
 
+  footer#contact {
+
+    .flex-container {
+      flex-direction: row;
+    }
+
+    .email-id {
+      font-size: 1.0rem;
+    }
+  }
+
 }
 
 /* Styles for Tablet */
@@ -297,7 +327,7 @@ footer {
   }
 
   .wrapper {
-    padding: 0 100px; 
+    padding: 0 100px;
   }
 
   .about-me .flex-container .photo {

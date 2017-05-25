@@ -13,8 +13,6 @@ function createfixedHeader() {
         headerHeight = $header.outerHeight(),
         $proxyHeader = $('.invisible-header-proxy');
 
-
-    console.log(headerHeight);
     $proxyHeader.css("height", headerHeight);
 
     $header.css({

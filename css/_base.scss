@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Georgia, Times, "Times New Roman", serif;
 }
 
-p, a, ul, li {
+p, a, ul, li, span  {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -43,7 +43,7 @@ p {
   font-size: 2.0rem;
 }
 
-p {
+p, span {
   color: $color-text-black;
 
   &::selection {
