@@ -64,7 +64,7 @@ header {
     display: inline-block;
     width: 93%; /* this number is arbitrarily chosen as something that works for small screen sizes as well.
     If I remove this width, the nav width becomes too small to even contain the li items. This is a hack; I do not know
-    a better solution yet. Ideally we shouldn't need to set the width explicitly */ 
+    a better solution yet. Ideally we shouldn't need to set the width explicitly */
 
     ul {
       text-align: right;

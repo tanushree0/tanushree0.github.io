@@ -20,8 +20,4 @@
 
 # Ignore .DS_store file
 .DS_Store
-.ruby-*
-**/*.css
-.sass-cache
-source/javascript/jsx/*.js
-.module-cache
+css/.DS_Store
