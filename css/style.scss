@@ -94,8 +94,13 @@ header {
   .hero p {
     font-size: 3rem;
 
+    a {
+      border-bottom: 3px solid $color-heading-grey;
+    }
+
     a:hover {
-      background: #f9f9f9;
+      //background: #f9f9f9;
+      background: $color-heading-grey; 
     }
   }
 
@@ -242,6 +247,10 @@ footer {
     vertical-align: middle;
     font-size: 2.5rem;
     padding-right: $horizontal-padding/2;
+
+    &:hover {
+      color: $nav-menu-highlighted-black;
+    }
   }
 
   .instagram .icon {
