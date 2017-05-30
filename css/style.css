@@ -426,12 +426,6 @@ p {
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-a {
-  color: #1EAEDB; }
-
-a:hover {
-  color: #0FA0CE; }
-
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .button,
@@ -745,9 +739,9 @@ h6 {
 p {
   font-size: 2.0rem; }
 
-p, span {
+p, span, a {
   color: #444; }
-  p::selection, span::selection {
+  p::selection, span::selection, a::selection {
     background-color: #f1f1f1; }
 
 h1 {
@@ -755,6 +749,12 @@ h1 {
 
 h2 {
   color: #444; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+  a:hover {
+    color: inherit; }
 
 body, html {
   margin: 0;
@@ -837,6 +837,8 @@ a better solution yet. Ideally we shouldn't need to set the width explicitly */ 
 
 .home .hero p {
   font-size: 3rem; }
+  .home .hero p a:hover {
+    background: #f9f9f9; }
 .home .skills div {
   width: 31.03448%;
   font-size: 2.0rem;

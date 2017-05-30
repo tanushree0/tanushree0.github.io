@@ -56,7 +56,7 @@ function smoothScrolling() {
                     event.preventDefault();
 
                     $('html, body').animate({
-                        scrollTop: target.offset().top - $('header').outerHeight() - 20
+                        scrollTop: target.offset().top - $('header').outerHeight() - 50
                     }, 1000, function() {
                         // Callback after animation
                         // Must change focus!

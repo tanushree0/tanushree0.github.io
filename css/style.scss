@@ -93,6 +93,10 @@ header {
 .home {
   .hero p {
     font-size: 3rem;
+
+    a:hover {
+      background: #f9f9f9;
+    }
   }
 
   .skills {
