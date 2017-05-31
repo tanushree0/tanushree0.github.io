@@ -838,7 +838,7 @@ a better solution yet. Ideally we shouldn't need to set the width explicitly */ 
 .home .hero p {
   font-size: 3rem; }
   .home .hero p a {
-    border-bottom: 3px solid rgba(191, 191, 191, 0.49); }
+    border-bottom: 1px solid rgba(191, 191, 191, 0.49); }
   .home .hero p a:hover {
     background: rgba(191, 191, 191, 0.49); }
 .home .skills div {
