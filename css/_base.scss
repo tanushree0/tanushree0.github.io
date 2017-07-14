@@ -19,11 +19,11 @@ Contains:
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Georgia, Times, "Times New Roman", serif;
+  font-family: $header-font-family;
 }
 
 p, a, ul, li, span  {
-  font-family: 'Roboto', sans-serif;
+  font-family: $body-font-family;
 }
 
 h1, h2, h3, h4, h5, h6 {

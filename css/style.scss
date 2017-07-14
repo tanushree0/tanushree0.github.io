@@ -165,8 +165,102 @@ header {
 
 .projects {
 
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .projects-wrapper {
+    background: #f6f6f6;
+  }
+
+
+  .projects-list {
+    width: span(5 of 6);
+    align-self: center;
+
+    * {
+      font-family: $body-font-family;
+    }
+    //background: $color-blue;
+
+    //p {
+    //  font-size: 2.5rem;
+    //  padding: $horizontal-padding;
+    //  padding-bottom: 0;
+    //}
+
+    .row {
+      padding: 20px; 
+    }
+
+    .project-image-container {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+
+      margin-bottom: 20px;
+    }
+
+    .project-description {
+      background: white;
+      padding: 10px;
+    }
+
+    h5 {
+      font-size: 1.8rem;
+    }
+
+    p, h6 {
+      font-size: 1.5rem;
+    }
+
+    h6 {
+      margin-bottom: 0.5rem;
+    }
+
+    h6 {
+      font-weight: 600;
+    }
+
+
+
+    button {
+      background: $color-text-black;
+      color: white;
+      border: none;
+    }
+
+    //.projects-proxy-container {
+    //  display: flex;
+    //  justify-content: flex-start;
+    //}
+    //
+    //.project-proxy {
+    //  height: 10rem; line-height: 10rem;
+    //
+    //  border: 1px solid darken($color-blue, 10%);
+    //  border-radius: 3px;
+    //  width: span(1 of 3);
+    //
+    //  margin-left: gutter();
+    //  text-align: center;
+    //  color:darken($color-heading-grey, 40%);
+    //  background: #fafafa;
+    //
+    //
+    //  &:hover {
+    //    color: darken($color-heading-grey, 80%);
+    //    background: white;
+    //  }
+    //
+    //}
+  }
+
   .clients {
-    width: span(2 of 6);
+    display: none;
+    width: span(6 of 6);
     border: 3px solid $color-blue;
     padding:$horizontal-padding;
 
@@ -184,42 +278,6 @@ header {
       &:hover {
         opacity: 1;
       }
-    }
-  }
-
-  .links-to-work {
-    width: span(4 of 6);
-    background: $color-blue;
-
-    p {
-      font-size: 2.5rem;
-      padding: $horizontal-padding;
-      padding-bottom: 0;
-    }
-
-    .projects-proxy-container {
-      display: flex;
-      justify-content: flex-start;
-    }
-
-    .project-proxy {
-      height: 10rem; line-height: 10rem;
-
-      border: 1px solid darken($color-blue, 10%);
-      border-radius: 3px;
-      width: span(1 of 3);
-
-      margin-left: gutter();
-      text-align: center;
-      color:darken($color-heading-grey, 40%);
-      background: #fafafa;
-
-
-      &:hover {
-        color: darken($color-heading-grey, 80%);
-        background: white;
-      }
-
     }
   }
 }
