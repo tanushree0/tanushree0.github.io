@@ -904,7 +904,7 @@ a better solution yet. Ideally we shouldn't need to set the width explicitly */ 
   .projects .projects-list h6 {
     font-weight: 600; }
   .projects .projects-list button {
-    background: #444;
+    background: black;
     color: white;
     border: none; }
 .projects .clients {
