@@ -953,9 +953,6 @@ footer {
   html {
     font-size: 43%; }
 
-  .wrapper {
-    padding: 0; }
-
   .flex-container {
     flex-direction: column; }
 
@@ -975,6 +972,10 @@ footer {
 
   .projects .projects-proxy-container {
     margin-bottom: 2.5rem; }
+  .projects .projects-list .row {
+    padding: 7px; }
+  .projects .projects-list .project-image-container {
+    margin-bottom: 7px; }
 
   footer#contact .flex-container {
     flex-direction: row; } }

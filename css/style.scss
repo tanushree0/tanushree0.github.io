@@ -345,10 +345,6 @@ footer {
     // we have set most heights, margin, font-size in rems.
   }
 
-  .wrapper {
-    padding: 0; // content sticks to the margins on the phone 
-  }
-
   .flex-container {
     flex-direction: column;
   }
@@ -380,6 +376,18 @@ footer {
     .projects-proxy-container {
       margin-bottom: $vertical-margin-small;
     }
+
+    .projects-list {
+      .row {
+        padding: 7px;
+      }
+
+      .project-image-container {
+        margin-bottom: 7px;
+      }
+    }
+
+
   }
 
   footer#contact {
