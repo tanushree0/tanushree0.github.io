@@ -345,6 +345,10 @@ footer {
     // we have set most heights, margin, font-size in rems.
   }
 
+  .wrapper {
+    padding: 0; // content sticks to the margins on the phone 
+  }
+
   .flex-container {
     flex-direction: column;
   }
