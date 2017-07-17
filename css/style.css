@@ -783,7 +783,7 @@ body, html {
 
 header {
   padding: 2.5rem 0 0 0;
-  z-index: 100; }
+  z-index: 100000; }
 
 .home .hero {
   margin: 5rem 0 5rem 0; }
