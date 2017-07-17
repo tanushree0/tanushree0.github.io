@@ -661,13 +661,6 @@ hr {
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Self Clearing Goodness */
-.container:after,
-.row:after,
-.u-cf {
-  content: "";
-  display: table;
-  clear: both; }
-
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*
@@ -759,6 +752,11 @@ a {
   a:hover {
     color: inherit; }
 
+button:not(:disabled) {
+  background: black;
+  color: white;
+  border: none; }
+
 body, html {
   margin: 0;
   padding: 0; }
@@ -774,19 +772,11 @@ body, html {
   box-sizing: border-box; }
 
 .wrapper {
-  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
   max-width: 990px;
   padding: 0 20px; }
-  .wrapper:after {
-    content: " ";
-    display: block;
-    clear: both; }
-  .wrapper:after {
-    content: " ";
-    display: block;
-    clear: both; }
 
 .section {
   margin-bottom: 5rem; }
@@ -878,35 +868,89 @@ a better solution yet. Ideally we shouldn't need to set the width explicitly */ 
 
 .projects .flex-container {
   flex-direction: column; }
-.projects .projects-wrapper {
-  background: #f6f6f6; }
-.projects .projects-list {
-  width: 82.75862%;
-  align-self: center; }
-  .projects .projects-list * {
-    font-family: "Roboto", sans-serif; }
-  .projects .projects-list .row {
-    padding: 20px; }
-  .projects .projects-list .project-image-container {
-    width: 100%;
-    margin-bottom: 20px; }
-    .projects .projects-list .project-image-container img {
-      width: 100%; }
-  .projects .projects-list .project-description {
-    background: white;
-    padding: 10px; }
-  .projects .projects-list h5 {
-    font-size: 1.8rem; }
-  .projects .projects-list p, .projects .projects-list h6 {
-    font-size: 1.5rem; }
-  .projects .projects-list h6 {
-    margin-bottom: 0.5rem; }
-  .projects .projects-list h6 {
-    font-weight: 600; }
-  .projects .projects-list button {
+.projects .row {
+  background: rgba(197, 225, 235, 0.9);
+  padding: 40px 0px; }
+  .projects .row:nth-child(2n) .collapsed-row {
+    flex-direction: row-reverse; }
+.projects .collapsed-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 20px;
+  background: white; }
+.projects .project-screenshot {
+  width: 65.51724%;
+  border: 1px solid #e1e1e1; }
+  .projects .project-screenshot img {
+    width: 100%; }
+  .projects .project-screenshot .image-description {
+    display: none;
+    margin-top: 10px;
     background: black;
-    color: white;
-    border: none; }
+    opacity: 0.4;
+    text-align: center; }
+    .projects .project-screenshot .image-description span {
+      color: white; }
+  .projects .project-screenshot .slick-arrow {
+    background: none;
+    z-index: 1000; }
+    .projects .project-screenshot .slick-arrow:before {
+      color: #ddd;
+      opacity: 1; }
+  .projects .project-screenshot .slick-prev {
+    left: 5px; }
+  .projects .project-screenshot .slick-next {
+    right: 5px; }
+.projects .project-name {
+  width: 31.03448%;
+  display: flex;
+  flex-direction: column;
+  font-size: 2.0rem;
+  color: #444; }
+  .projects .project-name p {
+    color: #555555;
+    margin-top: 4rem; }
+  .projects .project-name .project-link {
+    margin-top: auto;
+    margin-bottom: 30px; }
+  .projects .project-name button {
+    margin-bottom: 0; }
+.projects .expanded-row-part {
+  padding: 0; }
+.projects .read-more {
+  text-align: center;
+  background: white; }
+  .projects .read-more:hover {
+    cursor: pointer; }
+.projects .more-project-container {
+  display: none; }
+.projects .more-project {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: white; }
+  .projects .more-project > div {
+    width: 44%; }
+.projects .projects-list * {
+  font-family: "Roboto", sans-serif; }
+.projects .projects-list .project-image-container {
+  width: 100%;
+  margin-bottom: 20px; }
+  .projects .projects-list .project-image-container img {
+    width: 100%; }
+.projects .projects-list .project-description {
+  background: white;
+  padding: 10px; }
+.projects .projects-list h5 {
+  font-size: 1.8rem; }
+.projects .projects-list p, .projects .projects-list h6 {
+  font-size: 1.5rem; }
+.projects .projects-list h6 {
+  margin-bottom: 0.5rem; }
+.projects .projects-list h6 {
+  font-weight: 600; }
 .projects .clients {
   display: none;
   width: 100%;
@@ -924,12 +968,13 @@ a better solution yet. Ideally we shouldn't need to set the width explicitly */ 
       opacity: 1; }
 
 footer {
-  background: rgba(220, 216, 226, 0.91);
-  padding: 1.25rem 0; }
+  background: #333;
+  padding: 2.5rem 0; }
   footer.section {
     margin-bottom: 0; }
-  footer p, footer span, footer .icon {
-    color: rgba(7, 7, 7, 0.52); }
+  footer h2, footer p, footer span, footer .icon {
+    color: rgba(7, 7, 7, 0.52);
+    color: #f1f1f1; }
   footer .flex-container {
     align-items: flex-end; }
   footer .icon {
@@ -970,6 +1015,14 @@ footer {
       height: 200px;
       margin-bottom: 2.5rem; }
 
+  .projects .project-screenshot, .projects .project-name {
+    width: 100%; }
+  .projects .collapsed-row {
+    padding: 10px 20px; }
+  .projects .project-name p {
+    margin: 2.5rem 0; }
+  .projects .project-name span {
+    margin-top: 5px; }
   .projects .projects-proxy-container {
     margin-bottom: 2.5rem; }
   .projects .projects-list .row {

@@ -8,10 +8,14 @@
 
 
 .wrapper {
-  @include container();
+  //@include container();
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
   max-width: 990px;
   padding: 0 20px; // padding on the right and left, so that the content does not stick to the margins on screens width<950px
-  @include cf;
+  //@include cf;
 }
 
 .section {
@@ -169,14 +173,135 @@ header {
     flex-direction: column;
   }
 
-  .projects-wrapper {
-    background: #f6f6f6;
+  .projects-color-wrapper {
+  }
+
+
+  .row {
+    background: $color-blue;
+    //margin-bottom: $vertical-margin-small*5;
+    padding: 40px 0px;
+
+
+    &:nth-child(2n) .collapsed-row {
+      flex-direction: row-reverse;
+    }
+
+  }
+
+  .collapsed-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 20px;
+
+    background: white;
+    //margin-top: 20px; margin-bottom: 20px;
+
+  }
+
+  .project-screenshot {
+    width: span(4 of 6);
+    border: 1px solid #e1e1e1;
+
+    //border: 1px solid #e5e5e5;
+
+   img {
+      width: 100%;
+    }
+
+    .image-description {
+      display: none;
+      margin-top: 10px;
+      background: black;
+
+      opacity: 0.4;
+      text-align: center;
+
+      span {
+        color: white;
+      }
+    }
+
+    .slick-arrow {
+      background: none;
+      z-index: 1000;
+
+      &:before {
+        color: #ddd;
+        opacity: 1;
+      }
+    }
+
+    .slick-prev {
+      left: 5px;
+    }
+    .slick-next {
+      right: 5px;
+    }
+
+  }
+
+  .project-name {
+    width: span(2 of 6);
+
+    display: flex;
+    flex-direction: column;
+
+    font-size: 2.0rem;
+    color: $color-text-black;
+
+    p {
+      color: #555555;
+      margin-top: 4rem;
+    }
+
+    .project-link {
+      margin-top: auto;
+      margin-bottom: 30px;
+    }
+
+    button {
+      margin-bottom: 0; //reset margin set before
+    }
+
+  }
+  .expanded-row-part { padding: 0;}
+
+  .read-more {
+    //padding: 5px 0;
+    text-align: center;
+    //background: white; border-top: 1px solid $color-text-black;
+    background: white;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+  .more-project-container {
+    display: none; // to be shown on "read more" by javascript
+  }
+
+  .more-project {
+    width: span(6 of 6);
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    background: white;
+
+
+    >div {
+      width: 44%;
+    }
   }
 
 
   .projects-list {
-    width: span(5 of 6);
-    align-self: center;
+    //width: span(5 of 6);
+    //align-self: center;
 
     * {
       font-family: $body-font-family;
@@ -189,9 +314,9 @@ header {
     //  padding-bottom: 0;
     //}
 
-    .row {
-      padding: 20px; 
-    }
+    //.row {
+    //  padding: 20px;
+    //}
 
     .project-image-container {
       width: 100%;
@@ -224,13 +349,6 @@ header {
       font-weight: 600;
     }
 
-
-
-    button {
-      background: $nav-menu-highlighted-black;
-      color: white;
-      border: none;
-    }
 
     //.projects-proxy-container {
     //  display: flex;
@@ -285,15 +403,16 @@ header {
 
 footer {
 
-  background: $color-mauve;
-  padding: $vertical-margin-small/2 0;
+  //background: $color-pink-highlighted;
+  background: #333;
+  padding: $vertical-margin-small 0;
 
   &.section {
     margin-bottom: 0;
   }
 
-  p, span, .icon {
-    color: darken($nav-menu-grey, 40%);
+  h2, p, span, .icon {
+    color: darken($nav-menu-grey, 40%); color: #f1f1f1;
   }
 
   .flex-container {
@@ -373,6 +492,26 @@ footer {
   }
 
   .projects {
+    .project-screenshot, .project-name {
+      width: span(6 of 6);
+    }
+
+    .collapsed-row {
+      padding: 10px 20px;
+    }
+
+    .project-name {
+      p {
+        margin: 2.5rem 0;
+      }
+
+      span {
+        margin-top: 5px;
+      }
+    }
+
+
+
     .projects-proxy-container {
       margin-bottom: $vertical-margin-small;
     }

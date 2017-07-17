@@ -4,8 +4,14 @@ $(document).ready(function() {
     createfixedHeader();
     smoothScrolling();
 
+    showMoreProject();
 
+    $('.project-screenshot').slick({
+        dots: true,
 
+        // autoplay: true,
+        // autoplaySpeed: 5000
+    });
 });
 
 function createfixedHeader() {
@@ -72,4 +78,13 @@ function smoothScrolling() {
                 }
             }
         });
+}
+
+
+
+function showMoreProject() {
+    $(".read-more").on("click", function(e) {
+        $(this).siblings(".more-project-container").slideToggle();
+
+    });
 }

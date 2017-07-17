@@ -67,6 +67,13 @@ a {
   }
 }
 
+button:not(:disabled) {
+ background: $nav-menu-highlighted-black;
+ color: white;
+ border: none;
+
+}
+
 body, html {
   margin: 0; padding: 0;
 
