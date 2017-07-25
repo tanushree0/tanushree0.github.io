@@ -20,6 +20,14 @@
 
 .section {
   margin-bottom: $section-margin-bottom;
+
+  //&.projects {
+  //  margin-bottom: 0;
+  //
+  //  .projects-wrapper {
+  //    padding-bottom: $section-margin-bottom;
+  //  }
+  //}
 }
 
 header {
@@ -173,14 +181,14 @@ header {
     flex-direction: column;
   }
 
-  .projects-color-wrapper {
+  .projects-wrapper {
+    background: $color-blue;
   }
 
 
   .row {
-    background: $color-blue;
     //margin-bottom: $vertical-margin-small*5;
-    padding: 40px 0px;
+    padding: 40px 0;
 
 
     &:nth-child(2n) .collapsed-row {
@@ -196,6 +204,7 @@ header {
     padding: 40px 20px;
 
     background: white;
+    border-radius: 2px;
     //margin-top: 20px; margin-bottom: 20px;
 
   }
@@ -271,7 +280,6 @@ header {
   .read-more {
     //padding: 5px 0;
     text-align: center;
-    //background: white; border-top: 1px solid $color-text-black;
     background: white;
 
     &:hover{
@@ -300,23 +308,10 @@ header {
 
 
   .projects-list {
-    //width: span(5 of 6);
-    //align-self: center;
 
     * {
       font-family: $body-font-family;
     }
-    //background: $color-blue;
-
-    //p {
-    //  font-size: 2.5rem;
-    //  padding: $horizontal-padding;
-    //  padding-bottom: 0;
-    //}
-
-    //.row {
-    //  padding: 20px;
-    //}
 
     .project-image-container {
       width: 100%;
@@ -328,13 +323,9 @@ header {
       margin-bottom: 20px;
     }
 
-    .project-description {
-      background: white;
-      padding: 10px;
-    }
-
     h5 {
       font-size: 1.8rem;
+
     }
 
     p, h6 {
@@ -348,32 +339,6 @@ header {
     h6 {
       font-weight: 600;
     }
-
-
-    //.projects-proxy-container {
-    //  display: flex;
-    //  justify-content: flex-start;
-    //}
-    //
-    //.project-proxy {
-    //  height: 10rem; line-height: 10rem;
-    //
-    //  border: 1px solid darken($color-blue, 10%);
-    //  border-radius: 3px;
-    //  width: span(1 of 3);
-    //
-    //  margin-left: gutter();
-    //  text-align: center;
-    //  color:darken($color-heading-grey, 40%);
-    //  background: #fafafa;
-    //
-    //
-    //  &:hover {
-    //    color: darken($color-heading-grey, 80%);
-    //    background: white;
-    //  }
-    //
-    //}
   }
 
   .clients {
@@ -496,17 +461,28 @@ footer {
       width: span(6 of 6);
     }
 
+    .project-description {
+      width: span(5 of 6);
+    }
+
     .collapsed-row {
-      padding: 10px 20px;
+      padding: 0px 0;
+    }
+
+    .row {
+      padding: 10px 0 10px 0;
     }
 
     .project-name {
+      padding: 0 20px;
       p {
         margin: 2.5rem 0;
+        font-size: 1.6rem;
       }
 
       span {
         margin-top: 5px;
+        font-weight: bold; 
       }
     }
 
@@ -518,7 +494,7 @@ footer {
 
     .projects-list {
       .row {
-        padding: 7px;
+        //padding: 7px;
       }
 
       .project-image-container {

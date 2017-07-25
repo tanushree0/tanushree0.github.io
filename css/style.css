@@ -868,9 +868,10 @@ a better solution yet. Ideally we shouldn't need to set the width explicitly */ 
 
 .projects .flex-container {
   flex-direction: column; }
+.projects .projects-wrapper {
+  background: rgba(197, 225, 235, 0.9); }
 .projects .row {
-  background: rgba(197, 225, 235, 0.9);
-  padding: 40px 0px; }
+  padding: 40px 0; }
   .projects .row:nth-child(2n) .collapsed-row {
     flex-direction: row-reverse; }
 .projects .collapsed-row {
@@ -878,7 +879,8 @@ a better solution yet. Ideally we shouldn't need to set the width explicitly */ 
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 40px 20px;
-  background: white; }
+  background: white;
+  border-radius: 2px; }
 .projects .project-screenshot {
   width: 65.51724%;
   border: 1px solid #e1e1e1; }
@@ -940,9 +942,6 @@ a better solution yet. Ideally we shouldn't need to set the width explicitly */ 
   margin-bottom: 20px; }
   .projects .projects-list .project-image-container img {
     width: 100%; }
-.projects .projects-list .project-description {
-  background: white;
-  padding: 10px; }
 .projects .projects-list h5 {
   font-size: 1.8rem; }
 .projects .projects-list p, .projects .projects-list h6 {
@@ -1017,16 +1016,22 @@ footer {
 
   .projects .project-screenshot, .projects .project-name {
     width: 100%; }
+  .projects .project-description {
+    width: 82.75862%; }
   .projects .collapsed-row {
-    padding: 10px 20px; }
-  .projects .project-name p {
-    margin: 2.5rem 0; }
-  .projects .project-name span {
-    margin-top: 5px; }
+    padding: 0px 0; }
+  .projects .row {
+    padding: 10px 0 10px 0; }
+  .projects .project-name {
+    padding: 0 20px; }
+    .projects .project-name p {
+      margin: 2.5rem 0;
+      font-size: 1.6rem; }
+    .projects .project-name span {
+      margin-top: 5px;
+      font-weight: bold; }
   .projects .projects-proxy-container {
     margin-bottom: 2.5rem; }
-  .projects .projects-list .row {
-    padding: 7px; }
   .projects .projects-list .project-image-container {
     margin-bottom: 7px; }
 
