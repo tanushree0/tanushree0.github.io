@@ -1039,9 +1039,8 @@ footer {
   .projects .collapsed-row {
     padding: 0 0; }
   .projects .row {
-    padding: 0;
-    border-right: 2px solid rgba(197, 225, 235, 0.9);
-    border-left: 2px solid rgba(197, 225, 235, 0.9);
+    border-right: 4px solid rgba(197, 225, 235, 0.9);
+    border-left: 4px solid rgba(197, 225, 235, 0.9);
     margin-bottom: 20px; }
   .projects .project-name {
     padding: 0 20px; }
