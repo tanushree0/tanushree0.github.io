@@ -159,6 +159,9 @@ header {
 }
 
 .about-me {
+  &.section {
+    padding: $vertical-margin-small 0;
+  }
 
   p {
     font-size: 1.8rem;
@@ -187,6 +190,7 @@ header {
   }
 
   .companies {
+    margin-bottom: 0;
     //display: flex;
     //flex-direction: row;
     //justify-content: space-between;
@@ -419,7 +423,7 @@ footer {
   }
 
   h2, p, span, .icon, a {
-    color: #e1e1e1;  
+    color: #e1e1e1;
   }
 
   a:hover {
@@ -498,6 +502,14 @@ footer {
         width: span(4 of 6);
         height: 200px;
         margin-bottom: $vertical-margin-small;
+      }
+    }
+
+    .companies {
+      img {
+        height: 20px;
+        padding-right: 10px;
+        margin-bottom: 5px;
       }
     }
   }

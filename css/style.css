@@ -860,6 +860,8 @@ a better solution yet. Ideally we shouldn't need to set the width explicitly */ 
   .home .listening:hover {
     background: #f3ced9; }
 
+.about-me.section {
+  padding: 2.5rem 0; }
 .about-me p {
   font-size: 1.8rem; }
 .about-me .photo {
@@ -873,14 +875,16 @@ a better solution yet. Ideally we shouldn't need to set the width explicitly */ 
     filter: brightness(100%); }
 .about-me .text {
   width: 65.51724%; }
-.about-me .companies img {
-  height: 30px;
-  padding-right: 15px;
-  vertical-align: text-top;
-  opacity: 0.8;
-  filter: grayscale(100%); }
-  .about-me .companies img:hover {
-    opacity: 1.0; }
+.about-me .companies {
+  margin-bottom: 0; }
+  .about-me .companies img {
+    height: 30px;
+    padding-right: 15px;
+    vertical-align: text-top;
+    opacity: 0.8;
+    filter: grayscale(100%); }
+    .about-me .companies img:hover {
+      opacity: 1.0; }
 
 .projects.section {
   background: rgba(197, 225, 235, 0.9);
@@ -1035,6 +1039,10 @@ footer {
       width: 65.51724%;
       height: 200px;
       margin-bottom: 2.5rem; }
+  .about-me .companies img {
+    height: 20px;
+    padding-right: 10px;
+    margin-bottom: 5px; }
 
   .projects .project-screenshot, .projects .project-name {
     width: 100%; }
