@@ -751,6 +751,10 @@ a {
   a:hover {
     color: inherit; }
 
+li span {
+  position: relative;
+  left: -5px; }
+
 button.primary {
   background: black;
   color: white;
@@ -947,19 +951,21 @@ a better solution yet. Ideally we shouldn't need to set the width explicitly */ 
   padding: 0; }
 .projects .read-more {
   text-align: center;
-  background: white; }
+  background: #eee;
+  color: #555555; }
   .projects .read-more:hover {
     cursor: pointer; }
 .projects .more-project-container {
   display: none; }
 .projects .more-project {
+  padding: 20px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   background: white; }
   .projects .more-project > div {
-    width: 44%; }
+    width: 48.27586%; }
 .projects .projects-list * {
   font-family: "Roboto", sans-serif; }
 .projects .projects-list .project-image-container {
@@ -972,24 +978,8 @@ a better solution yet. Ideally we shouldn't need to set the width explicitly */ 
 .projects .projects-list p, .projects .projects-list h6 {
   font-size: 1.5rem; }
 .projects .projects-list h6 {
+  font-weight: 600;
   margin-bottom: 0.5rem; }
-.projects .projects-list h6 {
-  font-weight: 600; }
-.projects .clients {
-  display: none;
-  width: 100%;
-  border: 3px solid rgba(197, 225, 235, 0.9);
-  padding: 2.5rem; }
-  .projects .clients .client-logo {
-    display: inline-block;
-    margin-bottom: 2.5rem; }
-  .projects .clients img {
-    height: 5rem;
-    margin-right: 3.5rem;
-    vertical-align: middle;
-    opacity: 0.8; }
-    .projects .clients img:hover {
-      opacity: 1; }
 
 footer {
   background: #333;

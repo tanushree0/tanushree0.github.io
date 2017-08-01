@@ -117,7 +117,19 @@ function setupNavSelectAndScrollSpy() {
 
 function showMoreProject() {
     $(".read-more").on("click", function(e) {
-        $(this).siblings(".more-project-container").slideToggle();
+        $(this).siblings(".more-project-container").slideToggle({
+
+            complete: function() {
+
+                /* toggle the icon for opening/closing div */
+                var classDownArrow = "ion-arrow-down-b",
+                    classUpArrow = "ion-arrow-up-b",
+                    $icon = $(this).siblings(".read-more").find(".icon");
+
+                $icon.toggleClass(classDownArrow).toggleClass(classUpArrow);
+
+            }
+        });
 
     });
 }

@@ -326,7 +326,9 @@ header {
   .read-more {
     //padding: 5px 0;
     text-align: center;
-    background: white;
+    background: #eee;
+    color: #555555;
+    //text-decoration: underline;
 
     &:hover{
       cursor: pointer;
@@ -338,6 +340,7 @@ header {
   }
 
   .more-project {
+    padding: 20px;
     width: span(6 of 6);
 
     display: flex;
@@ -348,7 +351,7 @@ header {
 
 
     >div {
-      width: 44%;
+      width: span(3 of 6);
     }
   }
 
@@ -379,34 +382,8 @@ header {
     }
 
     h6 {
-      margin-bottom: 0.5rem;
-    }
-
-    h6 {
       font-weight: 600;
-    }
-  }
-
-  .clients {
-    display: none;
-    width: span(6 of 6);
-    border: 3px solid $color-blue;
-    padding:$horizontal-padding;
-
-    .client-logo {
-      display: inline-block;
-      margin-bottom: $vertical-margin-small;
-    }
-
-    img {
-      height: 5rem;
-      margin-right: $horizontal-margin-small;
-      vertical-align: middle;
-      opacity: 0.8;
-
-      &:hover {
-        opacity: 1;
-      }
+      margin-bottom: 0.5rem;
     }
   }
 }
