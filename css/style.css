@@ -759,15 +759,15 @@ button.primary {
   background: black;
   color: white;
   border: none;
-  -webkit-box-shadow: 1px 1px 2px #ccc;
-  -moz-box-shadow: 1px 1px 2px #ccc;
-  box-shadow: 1px 1px 2px #ccc; }
+  -webkit-box-shadow: 1px 2px 2px #ccc;
+  -moz-box-shadow: 1px 2px 2px #ccc;
+  box-shadow: 1px 2px 2px #ccc; }
   button.primary:hover {
-    background: #1a1a1a;
+    background: #262626;
     outline: none;
-    -webkit-box-shadow: inset 0px 0px 4px #ccc;
-    -moz-box-shadow: inset 0px 0px 4px #ccc;
-    box-shadow: inset 0px 0px 4px #ccc; }
+    -webkit-box-shadow: inset 0px 0px 4px #eeeeee;
+    -moz-box-shadow: inset 0px 0px 4px #eeeeee;
+    box-shadow: inset 0px 0px 4px #eeeeee; }
 
 body, html {
   margin: 0;
@@ -952,9 +952,14 @@ a better solution yet. Ideally we shouldn't need to set the width explicitly */ 
 .projects .read-more {
   text-align: center;
   background: #eee;
-  color: #555555; }
+  color: #555555;
+  padding: 20px; }
   .projects .read-more:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    background: #ebebeb;
+    -webkit-box-shadow: inset 0px 0px 4px #ccc;
+    -moz-box-shadow: inset 0px 0px 4px #ccc;
+    box-shadow: inset 0px 0px 4px #ccc; }
 .projects .more-project-container {
   display: none; }
 .projects .more-project {

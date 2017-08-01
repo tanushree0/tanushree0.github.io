@@ -328,10 +328,16 @@ header {
     text-align: center;
     background: #eee;
     color: #555555;
+    padding: 20px;
     //text-decoration: underline;
 
     &:hover{
       cursor: pointer;
+
+      background: darken(#eee, 1%);
+      -webkit-box-shadow: inset 0px 0px 4px #ccc;
+      -moz-box-shadow: inset 0px 0px 4px #ccc;
+      box-shadow: inset 0px 0px 4px #ccc;
     }
   }
 
