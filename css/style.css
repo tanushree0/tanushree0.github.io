@@ -899,7 +899,8 @@ a better solution yet. Ideally we shouldn't need to set the width explicitly */ 
   font-size: 1.5rem; }
 .projects h6 {
   font-weight: 600;
-  margin-bottom: 0.5rem; }
+  margin-bottom: 0.5rem;
+  font-family: "Roboto", sans-serif; }
 .projects .row {
   padding: 2.5rem 0; }
   .projects .row:nth-child(2n) .collapsed-row {
