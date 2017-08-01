@@ -56,7 +56,7 @@
 			// 	elBottom < top);
 
 			var elTopWindow = elTop - $(document).scrollTop();
-			var isIntersect = elTopWindow > 100 && elTopWindow < 300;
+			var isIntersect = elTopWindow > 50 && elTopWindow < 300;
 
 			if (isIntersect) {
 				hits.push(element);
