@@ -35,10 +35,10 @@
                    <a href="#home"><h1>TJ</h1></a>
                    <nav class="nav">
                        <ul>
-                           <li><a href="#home">Home</a></li>
-                           <li><a href="#about">About</a></li>
-                           <li><a href="#projects">Projects</a></li>
-                           <li><a href="#contact">Contact</a></li>
+                           <li><a href="#home" class="home">Home</a></li>
+                           <li><a href="#projects" class="projects">Projects</a></li>
+                           <li><a href="#about" class="about">About</a></li>
+                           <li><a href="#contact" class="contact">Contact</a></li>
                        </ul>
                    </nav>
                </div>
@@ -48,11 +48,11 @@
 
        <div class="main-content-wrapper">
            <div class="invisible-header-proxy"></div>
-           <div class="home section" id="home">
+           <div class="home section scrollspy-section" id="home">
                <div class="wrapper">
                    <div class="hero">
                        <p>Hi, I am Tanushree, an independent web designer based in Bangalore. </p>
-                       <p>If you're an individual or a small organisation that needs a website built, <a href="mailto:contact@listeningtree.co">contact me</a> :)</p>
+                       <p>If you're an individual or a small organisation that needs a website built, <a href="mailto:contact@listeningtree.co">contact me</a>.</p>
                    </div>
 
                    <div class="skills flex-container">
@@ -62,14 +62,14 @@
                                I'm well-versed with web <span class="highlight">coding</span> tools like HTML, CSS, JS, Wordpress.
                            </p>
                            <p>
-                               I can build custom designs that work well on the web of today.
+                               I build customised designs that work well on the web of today.
 
                            </p>
                        </div>
                        <div class="design section-column">
 
                            <p>
-                               Attention to detail matters to me.
+                               Attention to detail and clarity matters to me.
                            </p>
                            <p>
                                I focus on purpose, aesthetics and user experience in the process of <span class="highlight">design</span>.
@@ -87,32 +87,7 @@
                    </div>
                </div>
            </div>
-
-
-           <div class="about-me section" id="about">
-               <div class="wrapper">
-                   <h2>About</h2>
-                   <div class="flex-container">
-
-                       <div class="text section-column">
-                           <p>
-
-                               I did undergraduate studies in Information Technology from DA-IICT Gandhinagar, and masters in Information Systems from UC Berkeley. I've over six years
-                               of work experience in web development and design with companies like Microsoft and startups in
-                               Bay Area and India.
-                           </p>
-                           <p>
-                               I am also a trained Expressive Arts Therapist. I have a committed interest in the space of self exploration and expression, using different arts and mediums.
-                           </p>
-                       </div>
-                       <div class="photo section-column"></div>
-
-                   </div>
-
-               </div>
-           </div>
-
-           <div class="projects section" id="projects">
+           <div class="projects section scrollspy-section" id="projects">
                <div class="wrapper section-title">
                    <h2>Recent projects</h2>
                </div>
@@ -137,7 +112,16 @@
                                            </div>
                                        </div>
                                        <div>
-                                           <img src="images/shoonya-website-screenshot-3.jpg" alt="Shoonya website screenshot 2">
+                                           <img src="images/shoonya-website-screenshot-3.jpg" alt="Shoonya website screenshot 3">
+                                       </div>
+                                       <div>
+                                           <img src="images/shoonya-website-screenshot-4.jpg" alt="Shoonya website screenshot 4">
+                                       </div>
+                                       <div>
+                                           <img src="images/shoonya-website-screenshot-5.jpg" alt="Shoonya website screenshot 5">
+                                       </div>
+                                       <div>
+                                           <img src="images/shoonya-website-screenshot-6.jpg" alt="Shoonya website screenshot 6">
                                        </div>
                                    </div>
                                    <div class="project-name">
@@ -146,7 +130,7 @@
                                             A thoughtfully minimal website, built to reflect the openness and lightness of Shoonya's physical space and work. Includes a custom event
                                            management system.
                                        </p>
-                                       <a href="http://shoonyaspace.com/" target="_blank" class="project-link"> <button>Website Link</button></a>
+                                       <a href="http://shoonyaspace.com/" target="_blank" class="project-link"> <button class="primary">Website Link</button></a>
                                    </div>
 
                                </div>
@@ -195,15 +179,16 @@
                                        <div>
                                            <img src="images/shoonya-journal-3.jpg" alt="Arts Journal Screenshot 3">
                                        </div>
+                                       <div>
+                                           <img src="images/shoonya-journal-4.jpg" alt="Arts Journal Screenshot 4">
+                                       </div>
                                    </div>
                                    <div class="project-name">
                                        <span>Online arts magazine</span>
                                        <p class="project-description">
                                           A photos-rich magazine, designed to be engaging and with an appealing look. Built to incorporate different article formats.
                                        </p>
-                                       <button disabled="true" class="project-link">
-                                           Website to be released soon
-                                       </button>
+                                       <button class="project-link">Link available on request</button>
                                    </div>
                                </div>
                            </div>
@@ -215,7 +200,7 @@
                                    <div class="project-name">
                                        <span>Swiggy - food delivery service</span>
                                        <p class="project-description">
-                                           As part of a gig with the design consultancy <a href="http://uncommon.is" target="_blank">Uncommon</a>, I worked on an initial version of Swiggy's website. Due to logistical reasons, this project could not be taken to completion.
+                                           As part of a gig with the design consultancy <a href="http://uncommon.is" target="_blank">Uncommon</a>, I worked on an initial version of Swiggy's website. Due to logistical reasons, the project was not taken to completion.
                                        </p>
                                        <button disabled="disabled" class="project-link">
                                            Link unavailable
@@ -270,17 +255,54 @@
 
                </div>
            </div>
+           <div class="about-me section scrollspy-section" id="about">
+               <div class="wrapper">
+                   <h2>About</h2>
+                   <div class="flex-container">
+
+                       <div class="text section-column">
+                           <p>
+                               I previously worked as software developer with Microsoft India, and as lead front-end developer and UI designer with Cognitive Match in Palo Alto, California. I enjoy working with technology as a means for enabling positive social change.
+
+                           </p>
+                           <p>
+                               I did undergraduate studies in Information Technology from DA-IICT Gandhinagar, and masters in Information Systems from UC Berkeley. I am also a trained Expressive Arts Therapist, and have a committed interest in the space of arts for self exploration and expression.
+                           </p>
+
+                           <p>
+
+                           </p>
+                           <p class="companies">
+                           <a href="https://www.microsoft.com/india/globaldelivery/" target="_blank"><img src="images/microsoft.jpg" alt="Microsoft"></a>
+                           <a href="https://techcrunch.com/2014/05/28/retargetting-startup-cognitive-match-acquired-by-magnetic/" target="_blank"><img src="images/cognitivematch.jpg" alt="Cognitive Match"></a>
+                           <a href="https://www.sprinklr.com/" target="_blank"><img src="images/sprinklrlogo.jpg" alt="Sprinklr"></a>
+                           <a href="http://shoonyaspace.com/" target="_blank"><img src="images/shoonya.png" alt="Shoonya"></a>
+                           <a href="http://uncommon.is" target="_blank"><img src="images/uncommon%20u.png" alt="Uncommon"></a>
+                           </p>
+
+
+                           <p>
+                               <!--<button>Resume</button>-->
+                           </p>
+                       </div>
+                       <div class="photo section-column"></div>
+
+                   </div>
+
+               </div>
+           </div>
+
 
        </div>
 
 
-        <footer id="contact" class="section">
+        <footer id="contact" class="section scrollspy-section">
             <div class="wrapper">
                 <h2>Contact</h2>
                 <div class="flex-container">
 
                     <div class="email section-column">
-                        <a href="mailto:contact@listeningtree.co"><span><i class="icon ion-ios-email-outline"></i></span><span class="email-id highlight">contact@listeningtree.co</span></a>
+                        <a href="mailto:contact@listeningtree.co"><span><i class="icon ion-ios-email-outline"></i></span><span class="email-id">contact@listeningtree.co</span></a>
                        <p>
                            Write to me with your project requirements and we can take it forward from there. Let's do good work together.
                        </p>
@@ -291,7 +313,7 @@
 
                     <div class="copyright section-column">
                         <div class="social-media">
-
+                            <!--<a href=""><span>Resume</span></a>-->
                             <a href="https://www.linkedin.com/in/tanushreejindal/"><span><i class="icon ion-social-linkedin-outline"></i></span></a>
                             <a href="https://github.com/tanushree0"><span><i class="icon ion-social-github"></i></span></a>
                             <a href="https://www.instagram.com/tnushree/"><span class="instagram"><i class="icon ion-social-instagram-outline"></i></span></a>
@@ -305,6 +327,9 @@
 
         <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="slick/slick.min.js"></script>
+
+        <!--Note: The function findElements has been modified by Tanushree in this file-->
+        <script type="text/javascript" src="js/scrollspy.js"></script>
 
 
         <script type="text/javascript" src="js/script.js"></script>

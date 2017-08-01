@@ -6,12 +6,15 @@ $(document).ready(function() {
 
     showMoreProject();
 
+    setupNavSelectAndScrollSpy();
+
     $('.project-screenshot').slick({
         dots: true,
 
         // autoplay: true,
         // autoplaySpeed: 5000
     });
+
 });
 
 function createfixedHeader() {
@@ -78,6 +81,36 @@ function smoothScrolling() {
                 }
             }
         });
+}
+
+
+function setupNavSelectAndScrollSpy() {
+
+    /* Add "active" class on select */
+
+    classActive = "active";
+
+    $("nav a").click(function() {
+        $(this).addClass(classActive);
+        $(this).parent().siblings().find("a").removeClass(classActive);
+
+        //TODO: There is a bug with when we click on "Contact", the scrollspy kicks in and activates "About" instead. Need to fix.
+    });
+
+
+    /*Initialise scrollspy */
+
+    $('.scrollspy-section').scrollSpy();
+
+    $('.scrollspy-section').on('scrollSpy:enter', function() {
+
+        // get id of section div that has entered.
+        var sectionId = $(this).attr('id');
+
+        // add the "active" class to the corresponding nav a elements, and remove class from all others
+        $("nav ." + sectionId).addClass(classActive);
+        $("nav a:not(." + sectionId + ")").removeClass(classActive);
+    });
 }
 
 

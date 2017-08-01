@@ -97,6 +97,10 @@ header {
       &:hover {
         color: $nav-menu-highlighted-black;
       }
+
+      &.active {
+        color: $nav-menu-highlighted-black;
+      }
     }
   }
 }
@@ -107,12 +111,12 @@ header {
     font-size: 3rem;
 
     a {
-      border-bottom: 1px solid $color-heading-grey;
+      //border-bottom: 1px solid $color-heading-grey;
     }
 
     a:hover {
       //background: #f9f9f9;
-      background: $color-heading-grey;
+      //background: $color-heading-grey;
     }
   }
 
@@ -156,26 +160,60 @@ header {
 
 .about-me {
 
+  p {
+    font-size: 1.8rem;
+  }
+
   .photo {
     width: span(2 of 6);
     background: url("../images/photo_me.jpg");
     background-position: center 15%;
     background-size: cover;
     background-repeat: no-repeat;
+    filter: brightness(95%);
 
-    opacity: 1.0;
+    //opacity: 0.9;
 
     &:hover {
-      opacity: 0.9;
+      filter: brightness(100%);
     }
   }
 
   .text {
     width: span(4 of 6);
+    //padding: $horizontal-padding;
+    //border: 1px solid $color-heading-grey;
+
+  }
+
+  .companies {
+    //display: flex;
+    //flex-direction: row;
+    //justify-content: space-between;
+
+
+
+    img {
+      height: 30px;
+      padding-right: 15px;
+      vertical-align: text-top;
+      opacity: 0.8;
+      filter: grayscale(100%);
+
+
+      &:hover {
+        //filter: grayscale(100%);
+        opacity: 1.0;
+      }
+    }
   }
 }
 
 .projects {
+  &.section {
+    background: $color-blue;
+    padding: $vertical-margin-small 0;
+  }
 
   .flex-container {
     flex-direction: column;
@@ -188,7 +226,7 @@ header {
 
   .row {
     //margin-bottom: $vertical-margin-small*5;
-    padding: 40px 0;
+    padding: $vertical-margin-small 0;
 
 
     &:nth-child(2n) .collapsed-row {
@@ -260,9 +298,13 @@ header {
     font-size: 2.0rem;
     color: $color-text-black;
 
+    span {
+      font-weight: 600;
+    }
+
     p {
       color: #555555;
-      margin-top: 4rem;
+      margin-top: $vertical-margin-small;
     }
 
     .project-link {
@@ -376,8 +418,12 @@ footer {
     margin-bottom: 0;
   }
 
-  h2, p, span, .icon {
-    color: darken($nav-menu-grey, 40%); color: #f1f1f1;
+  h2, p, span, .icon, a {
+    color: #e1e1e1;  
+  }
+
+  a:hover {
+    color: white;
   }
 
   .flex-container {
@@ -391,7 +437,7 @@ footer {
     padding-right: $horizontal-padding/2;
 
     &:hover {
-      color: $nav-menu-highlighted-black;
+      color: white;
     }
   }
 
@@ -470,7 +516,7 @@ footer {
     }
 
     .row {
-      padding: 0 0 30px 0; 
+      padding: 0 0 30px 0;
     }
 
     .project-name {
@@ -482,7 +528,6 @@ footer {
 
       span {
         margin-top: 5px;
-        font-weight: bold;
       }
     }
 
