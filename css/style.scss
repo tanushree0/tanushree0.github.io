@@ -175,8 +175,6 @@ header {
     background-repeat: no-repeat;
     filter: brightness(95%);
 
-    //opacity: 0.9;
-
     &:hover {
       filter: brightness(100%);
     }
@@ -184,18 +182,10 @@ header {
 
   .text {
     width: span(4 of 6);
-    //padding: $horizontal-padding;
-    //border: 1px solid $color-heading-grey;
-
   }
 
   .companies {
     margin-bottom: 0;
-    //display: flex;
-    //flex-direction: row;
-    //justify-content: space-between;
-
-
 
     img {
       height: 30px;
@@ -224,14 +214,21 @@ header {
   }
 
   .projects-wrapper {
-    background: $color-blue;
+    //background: $color-blue;
+  }
+
+  p, h6 {
+    font-size: 1.5rem;
+  }
+
+  h6 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
   }
 
 
   .row {
-    //margin-bottom: $vertical-margin-small*5;
     padding: $vertical-margin-small 0;
-
 
     &:nth-child(2n) .collapsed-row {
       flex-direction: row-reverse;
@@ -247,15 +244,11 @@ header {
 
     background: white;
     border-radius: 2px;
-    //margin-top: 20px; margin-bottom: 20px;
-
   }
 
   .project-screenshot {
     width: span(4 of 6);
     border: 1px solid #e1e1e1;
-
-    //border: 1px solid #e5e5e5;
 
    img {
       width: 100%;
@@ -309,6 +302,7 @@ header {
     p {
       color: #555555;
       margin-top: $vertical-margin-small;
+      font-size: 1.5rem;
     }
 
     .project-link {
@@ -328,7 +322,7 @@ header {
     text-align: center;
     background: #eee;
     color: #555555;
-    padding: 20px;
+    padding: 15px;
     //text-decoration: underline;
 
     &:hover{
@@ -358,38 +352,6 @@ header {
 
     >div {
       width: span(3 of 6);
-    }
-  }
-
-
-  .projects-list {
-
-    * {
-      font-family: $body-font-family;
-    }
-
-    .project-image-container {
-      width: 100%;
-
-      img {
-        width: 100%;
-      }
-
-      margin-bottom: 20px;
-    }
-
-    h5 {
-      font-size: 1.8rem;
-
-    }
-
-    p, h6 {
-      font-size: 1.5rem;
-    }
-
-    h6 {
-      font-weight: 600;
-      margin-bottom: 0.5rem;
     }
   }
 }
@@ -472,6 +434,10 @@ footer {
     }
   }
 
+  .section {
+    margin-bottom: 2rem;  
+  }
+
   .section .flex-container .section-column {
     width: span(6 of 6);
     margin-bottom: $vertical-margin-small;
@@ -511,7 +477,10 @@ footer {
     }
 
     .row {
-      padding: 0 0 30px 0;
+      padding: 0;
+      border-right: 2px solid $color-blue;
+      border-left: 2px solid $color-blue;
+      margin-bottom: 20px;
     }
 
     .project-name {

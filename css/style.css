@@ -895,8 +895,11 @@ a better solution yet. Ideally we shouldn't need to set the width explicitly */ 
   padding: 2.5rem 0; }
 .projects .flex-container {
   flex-direction: column; }
-.projects .projects-wrapper {
-  background: rgba(197, 225, 235, 0.9); }
+.projects p, .projects h6 {
+  font-size: 1.5rem; }
+.projects h6 {
+  font-weight: 600;
+  margin-bottom: 0.5rem; }
 .projects .row {
   padding: 2.5rem 0; }
   .projects .row:nth-child(2n) .collapsed-row {
@@ -941,7 +944,8 @@ a better solution yet. Ideally we shouldn't need to set the width explicitly */ 
     font-weight: 600; }
   .projects .project-name p {
     color: #555555;
-    margin-top: 2.5rem; }
+    margin-top: 2.5rem;
+    font-size: 1.5rem; }
   .projects .project-name .project-link {
     margin-top: auto;
     margin-bottom: 30px; }
@@ -953,7 +957,7 @@ a better solution yet. Ideally we shouldn't need to set the width explicitly */ 
   text-align: center;
   background: #eee;
   color: #555555;
-  padding: 20px; }
+  padding: 15px; }
   .projects .read-more:hover {
     cursor: pointer;
     background: #ebebeb;
@@ -971,20 +975,6 @@ a better solution yet. Ideally we shouldn't need to set the width explicitly */ 
   background: white; }
   .projects .more-project > div {
     width: 48.27586%; }
-.projects .projects-list * {
-  font-family: "Roboto", sans-serif; }
-.projects .projects-list .project-image-container {
-  width: 100%;
-  margin-bottom: 20px; }
-  .projects .projects-list .project-image-container img {
-    width: 100%; }
-.projects .projects-list h5 {
-  font-size: 1.8rem; }
-.projects .projects-list p, .projects .projects-list h6 {
-  font-size: 1.5rem; }
-.projects .projects-list h6 {
-  font-weight: 600;
-  margin-bottom: 0.5rem; }
 
 footer {
   background: #333;
@@ -1024,6 +1014,9 @@ footer {
   header .flex-container {
     flex-direction: row; }
 
+  .section {
+    margin-bottom: 2rem; }
+
   .section .flex-container .section-column {
     width: 100%;
     margin-bottom: 2.5rem; }
@@ -1046,7 +1039,10 @@ footer {
   .projects .collapsed-row {
     padding: 0 0; }
   .projects .row {
-    padding: 0 0 30px 0; }
+    padding: 0;
+    border-right: 2px solid rgba(197, 225, 235, 0.9);
+    border-left: 2px solid rgba(197, 225, 235, 0.9);
+    margin-bottom: 20px; }
   .projects .project-name {
     padding: 0 20px; }
     .projects .project-name p {
