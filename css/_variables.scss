@@ -17,9 +17,6 @@ $color-heading-grey: rgba(191, 191, 191, 0.49);
 $nav-menu-grey: rgba(109, 109, 109, 0.52);
 $nav-menu-highlighted-black: black;
 
-
-
-
 /***********
 Dimensions: lengths and widths
 ************/
@@ -30,11 +27,9 @@ $vertical-margin-small: 2.5rem; // same as the margin-bottom for p element
 $horizontal-margin-small: 3.5rem; // same as gutter width
 $horizontal-padding: 2.5rem; //same as vertical margins
 
-
-
 /***********
 Font families
 ************/
 
-$header-font-family: Georgia, Times, "Times New Roman", serif;
-$body-font-family: 'Roboto', sans-serif;
+$header-font-family: "Gentium Book Basic", serif;
+$body-font-family: "Gentium Book Basic", serif;

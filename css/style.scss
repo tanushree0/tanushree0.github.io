@@ -1,4 +1,4 @@
-@import "susy";
+//@import "susy";
 @import "normalize";
 @import "skeleton";
 
@@ -6,12 +6,17 @@
 
 @import "base";
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
 .wrapper {
   //@include container();
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  //width: 100%;
 
   max-width: 990px;
   padding: 0 20px; // padding on the right and left, so that the content does not stick to the margins on screens width<950px
@@ -37,7 +42,7 @@ header {
 }
 
 .home .hero {
-  margin: $vertical-margin-small*2 0 $vertical-margin-small*2 0;
+  margin: $vertical-margin-small * 2 0 $vertical-margin-small * 2 0;
 }
 
 span.highlight {
@@ -56,106 +61,11 @@ Followed as described here: https://codepen.io/michellebarker/post/flexbox-layou
 }
 
 header {
-  background: white; //because the header is fixed
+  background: pink; //because the header is fixed
   .wrapper {
     //background: $text-color-black;
     //border-bottom: 3px solid lighten($heading-grey, 15%);
   }
-
-
- .flex-container {
-   align-items: center;
- }
-
-  h1 {
-    display: inline-block;
-    margin-bottom: 0;
-  }
-
-  .nav {
-    display: inline-block;
-    width: 93%; /* this number is arbitrarily chosen as something that works for small screen sizes as well.
-    If I remove this width, the nav width becomes too small to even contain the li items. This is a hack; I do not know
-    a better solution yet. Ideally we shouldn't need to set the width explicitly */
-
-    ul {
-      text-align: right;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    li {
-      display: inline-block;
-      margin-left: $horizontal-padding;
-    }
-
-    li a{
-      text-decoration: none;
-      color: $nav-menu-grey;
-
-      &:hover {
-        color: $nav-menu-highlighted-black;
-      }
-
-      &.active {
-        color: $nav-menu-highlighted-black;
-      }
-    }
-  }
-}
-
-
-.home {
-  .hero p {
-    font-size: 3rem;
-
-    a {
-      //border-bottom: 1px solid $color-heading-grey;
-    }
-
-    a:hover {
-      //background: #f9f9f9;
-      //background: $color-heading-grey;
-    }
-  }
-
-  .skills {
-
-    div {
-      width: span(2 of 6);
-      font-size: 2.0rem;
-      border-radius: 0.1em;
-
-      padding: $horizontal-padding;
-
-      &:hover {
-        opacity: 1;
-      }
-    }
-  }
-
-  .coding {
-    background: $color-blue;
-    &:hover {
-      background: $color-blue-highlighted;
-    }
-  }
-
-  .design {
-    background: $color-mauve;
-    &:hover {
-      background: $color-mauve-highlighted;
-    }
-  }
-
-  .listening {
-    background: $color-pink;
-    &:hover {
-      background: $color-pink-highlighted;
-    }
-  }
-
 }
 
 .about-me {
@@ -163,17 +73,16 @@ header {
     padding: $vertical-margin-small 0;
   }
 
-  p {
-    font-size: 1.8rem;
-  }
-
   .photo {
-    width: span(2 of 6);
-    background: url("../images/photo_me.jpg");
+    width: 45%;
+    background: url("../images/profile.jpg");
     background-position: center 15%;
     background-size: cover;
     background-repeat: no-repeat;
     filter: brightness(95%);
+    border-radius: 50%;
+    max-width: 380px;
+    height: 380px;
 
     &:hover {
       filter: brightness(100%);
@@ -181,7 +90,7 @@ header {
   }
 
   .text {
-    width: span(4 of 6);
+    width: 55%;
   }
 
   .companies {
@@ -194,191 +103,38 @@ header {
       opacity: 0.8;
       filter: grayscale(100%);
 
-
       &:hover {
         //filter: grayscale(100%);
-        opacity: 1.0;
-      }
-    }
-  }
-}
-
-.projects {
-  &.section {
-    background: $color-blue;
-    padding: $vertical-margin-small 0;
-  }
-
-  .flex-container {
-    flex-direction: column;
-  }
-
-  .projects-wrapper {
-    //background: $color-blue;
-  }
-
-  p, h6 {
-    font-size: 1.5rem;
-  }
-
-  h6 {
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    font-family: $body-font-family;
-  }
-
-
-  .row {
-    padding: $vertical-margin-small 0;
-
-    &:nth-child(2n) .collapsed-row {
-      flex-direction: row-reverse;
-    }
-
-  }
-
-  .collapsed-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 40px 20px;
-
-    background: white;
-    border-radius: 2px;
-  }
-
-  .project-screenshot {
-    width: span(4 of 6);
-    border: 1px solid #e1e1e1;
-
-   img {
-      width: 100%;
-    }
-
-    .image-description {
-      display: none;
-      margin-top: 10px;
-      background: black;
-
-      opacity: 0.4;
-      text-align: center;
-
-      span {
-        color: white;
-      }
-    }
-
-    .slick-arrow {
-      background: none;
-      z-index: 1000;
-
-      &:before {
-        color: #ddd;
         opacity: 1;
       }
     }
-
-    .slick-prev {
-      left: 5px;
-    }
-    .slick-next {
-      right: 5px;
-    }
-
-  }
-
-  .project-name {
-    width: span(2 of 6);
-
-    display: flex;
-    flex-direction: column;
-
-    font-size: 2.0rem;
-    color: $color-text-black;
-
-    span {
-      font-weight: 600;
-    }
-
-    p {
-      color: #555555;
-      margin-top: $vertical-margin-small;
-      font-size: 1.5rem;
-    }
-
-    .project-link {
-      margin-top: auto;
-      margin-bottom: 30px;
-    }
-
-    button {
-      margin-bottom: 0; //reset margin set before
-    }
-
-  }
-  .expanded-row-part { padding: 0;}
-
-  .read-more {
-    //padding: 5px 0;
-    text-align: center;
-    background: #eee;
-    color: #555555;
-    padding: 15px;
-    //text-decoration: underline;
-
-    &:hover{
-      cursor: pointer;
-
-      background: darken(#eee, 1%);
-      -webkit-box-shadow: inset 0px 0px 4px #ccc;
-      -moz-box-shadow: inset 0px 0px 4px #ccc;
-      box-shadow: inset 0px 0px 4px #ccc;
-    }
-  }
-
-  .more-project-container {
-    display: none; // to be shown on "read more" by javascript
-  }
-
-  .more-project {
-    padding: 20px;
-    width: span(6 of 6);
-
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    background: white;
-
-
-    >div {
-      width: span(3 of 6);
-    }
   }
 }
 
-
 footer {
-
   //background: $color-pink-highlighted;
-  background: #333;
+  margin-top: auto;
+  background: pink;
   padding: $vertical-margin-small 0;
 
   &.section {
     margin-bottom: 0;
   }
 
-  h2, p, span, .icon, a {
-    color: #e1e1e1;
+  h2,
+  p,
+  span,
+  .icon,
+  a {
+    // color: #e1e1e1;
   }
 
   a:hover {
-    color: white;
+    // color: white;
   }
 
   .flex-container {
     align-items: flex-end;
-
   }
 
   .icon {
@@ -391,12 +147,12 @@ footer {
     }
   }
 
-  .instagram .icon {
+  .email .icon {
     padding-right: 0;
   }
 
   .section-column {
-    width: span(3 of 6);
+    width: 48%;
   }
 
   .email {
@@ -413,15 +169,13 @@ footer {
   .copyright {
     text-align: right;
   }
-
 }
 
 /* Styles for Mobile and Tablet */
 
 @media (max-width: 750px) {
-
   html {
-    font-size: 43%; // as compared to 62.5% for the desktop. All dimensions based on rems will be calculated accordingly.
+    //font-size: 54%; // as compared to 62.5% for the desktop. All dimensions based on rems will be calculated accordingly.
     // we have set most heights, margin, font-size in rems.
   }
 
@@ -436,11 +190,11 @@ footer {
   }
 
   .section {
-    margin-bottom: 2rem;  
+    margin-bottom: 2rem;
   }
 
   .section .flex-container .section-column {
-    width: span(6 of 6);
+    width: 100%;
     margin-bottom: $vertical-margin-small;
   }
 
@@ -449,87 +203,25 @@ footer {
       flex-direction: column-reverse;
 
       .photo {
-        width: span(4 of 6);
-        height: 200px;
+        width: 250px;
+        height: 250px;
         margin-bottom: $vertical-margin-small;
       }
     }
-
-    .companies {
-      img {
-        height: 20px;
-        padding-right: 10px;
-        margin-bottom: 5px;
-      }
-    }
-  }
-
-  .projects {
-    .project-screenshot, .project-name {
-      width: span(6 of 6);
-    }
-
-    .project-description {
-      width: span(5 of 6);
-    }
-
-    .collapsed-row {
-      padding: 0 0;
-    }
-
-    .row {
-      border-right: 4px solid $color-blue;
-      border-left: 4px solid $color-blue;
-      margin-bottom: 20px;
-    }
-
-    .project-name {
-      padding: 0 20px;
-      p {
-        margin: 2.5rem 0;
-        font-size: 1.6rem;
-      }
-
-      span {
-        margin-top: 5px;
-      }
-    }
-
-
-
-    .projects-proxy-container {
-      margin-bottom: $vertical-margin-small;
-    }
-
-    .projects-list {
-      .row {
-        //padding: 7px;
-      }
-
-      .project-image-container {
-        margin-bottom: 7px;
-      }
-    }
-
-
   }
 
   footer#contact {
-
     .flex-container {
       flex-direction: row;
     }
-
   }
-
 }
 
 /* Styles for Tablet */
 
-@media (min-width:550px) and (max-width:750px) {
-
+@media (min-width: 550px) and (max-width: 750px) {
   html {
-    font-size: 54%;
+    // font-size: 54%;
   }
 
   .wrapper {
@@ -537,10 +229,7 @@ footer {
   }
 
   .about-me .flex-container .photo {
-    width: span(3 of 6);
+    width: 250px;
     height: 250px;
   }
-
-
-
 }

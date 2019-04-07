@@ -6,44 +6,74 @@ Contains:
 
 */
 
-
-
 /***********************************
 
 1. Base styles, modifications from skeleton
 
 ************************************/
 
-
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $header-font-family;
 }
 
-p, a, ul, li, span  {
+p,
+a,
+ul,
+li,
+span {
   font-family: $body-font-family;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 2rem;
-  font-weight: 300; }
-h1 { font-size: 5.0rem; line-height: 1.2;  }
-h2 { font-size: 2.5rem; line-height: 1.25;}
-h3 { font-size: 3.0rem; line-height: 1.3;   }
-h4 { font-size: 2.4rem; line-height: 1.35; }
-h5 { font-size: 1.8rem; line-height: 1.5;   }
-h6 { font-size: 1.8rem; line-height: 1.6;  }
-
-
-
-p {
-  font-size: 2.0rem;
+  font-weight: 300;
+}
+h1 {
+  font-size: 5rem;
+  line-height: 1.2;
+}
+h2 {
+  font-size: 2.5rem;
+  line-height: 1.25;
+}
+h3 {
+  font-size: 3rem;
+  line-height: 1.3;
+}
+h4 {
+  font-size: 2.4rem;
+  line-height: 1.35;
+}
+h5 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+h6 {
+  font-size: 1.8rem;
+  line-height: 1.6;
 }
 
-p, span, a {
+p {
+  font-size: 2rem;
+}
+
+p,
+span,
+a {
   color: $color-text-black;
 
   &::selection {
@@ -76,9 +106,9 @@ button {
 }
 
 button.primary {
- background: $nav-menu-highlighted-black;
- color: white;
- border: none;
+  background: $nav-menu-highlighted-black;
+  color: white;
+  border: none;
 
   -webkit-box-shadow: 1px 2px 2px #ccc;
   -moz-box-shadow: 1px 2px 2px #ccc;
@@ -93,14 +123,13 @@ button.primary {
   }
 }
 
-body, html {
-  margin: 0; padding: 0;
+body,
+html {
+  margin: 0;
+  padding: 0;
 
   //background: black;
 }
-
-
-
 
 /***********************************
 
@@ -108,17 +137,17 @@ body, html {
 
 ************************************/
 
-$susy: (
-        columns: 6,
-        global-box-sizing: border-box,
-  //debug: (image: show)
-);
+// $susy: (
+//         columns: 6,
+//         global-box-sizing: border-box,
+//   //debug: (image: show)
+// );
 
-@include border-box-sizing;
+// @include border-box-sizing;
 
-@mixin cf {
-  &:after {
-    content: " ";
-    display: block;
-    clear: both;
-  } }
+// @mixin cf {
+//   &:after {
+//     content: " ";
+//     display: block;
+//     clear: both;
+//   } }
