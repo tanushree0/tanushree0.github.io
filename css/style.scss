@@ -77,6 +77,7 @@ header {
 }
 
 .about-me {
+  margin-top: $vertical-margin-small * 2;
   &.section {
     padding: $vertical-margin-small 0;
   }
@@ -207,6 +208,8 @@ footer {
   }
 
   .about-me {
+    margin-top: 0;
+
     .flex-container {
       flex-direction: column-reverse;
 

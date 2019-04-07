@@ -944,6 +944,9 @@ Followed as described here: https://codepen.io/michellebarker/post/flexbox-layou
 header {
   background: pink;
 }
+.about-me {
+  margin-top: 5rem;
+}
 .about-me.section {
   padding: 2.5rem 0;
 }
@@ -1030,6 +1033,9 @@ footer .copyright {
     margin-bottom: 2.5rem;
   }
 
+  .about-me {
+    margin-top: 0;
+  }
   .about-me .flex-container {
     flex-direction: column-reverse;
   }
