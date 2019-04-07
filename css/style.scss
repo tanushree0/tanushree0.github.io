@@ -12,6 +12,14 @@ body {
   min-height: 100vh;
 }
 
+.pop:hover {
+  background: pink;
+}
+
+a {
+  text-decoration-color: pink;
+}
+
 .wrapper {
   //@include container();
   margin-left: auto;

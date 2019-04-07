@@ -898,6 +898,14 @@ body {
   min-height: 100vh;
 }
 
+.pop:hover {
+  background: pink;
+}
+
+a {
+  text-decoration-color: pink;
+}
+
 .wrapper {
   margin-left: auto;
   margin-right: auto;
