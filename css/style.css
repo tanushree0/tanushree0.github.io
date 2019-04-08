@@ -947,9 +947,6 @@ header {
 .about-me {
   margin-top: 5rem;
 }
-.about-me.section {
-  padding: 2.5rem 0;
-}
 .about-me .photo {
   width: 45%;
   background: url("../images/profile.jpg");
