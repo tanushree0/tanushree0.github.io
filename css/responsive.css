@@ -12,7 +12,7 @@
     
     h2 {
         font-size: 26px;
-        font-weight: 500;
+        font-weight: 400;
         /* color: #607D8B; */
         /* text-transform: uppercase; */
     }
@@ -24,7 +24,7 @@
     
     h4 {
         font-size: 18px;
-        font-weight: 300;
+        font-weight: 400;
         margin-top: 0;
         margin-bottom: 15px;
     }
@@ -37,7 +37,7 @@
     }
     
     .tag {
-        font-size: 14px;
+        font-size: 12px;
         margin-right: 5px; margin-bottom: 10px;
         padding: 3px;
     }
@@ -47,7 +47,8 @@
     }
     
     button {
-        background-color: white;
+        background-color: black;
+        color: white;
         padding: 10px 20px;
         font-size: 14px;
         font-weight: 300;
@@ -61,12 +62,18 @@
         flex-direction: column;
     }
 
-    .case-study .column {
+    .case-study .column.image {
         width: 100%;
     }
 
     .case-study .column.text {
+        width: 100%;
         padding-left: 0;
+        padding-top: 20px;
+    }
+
+    .case-study .button-container {
+        margin-top: 0;
     }
 
     .three-case-studies {
@@ -75,6 +82,12 @@
 
     .three-case-studies .case-study {
         max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .three-case-studies .case-study h4{
+      /* Include h3 style */
+      font-size: 22px;
     }
 
     .three-case-studies .case-study:not(:first-child) {
@@ -87,11 +100,27 @@
     }
 
     /* Case study page */
-    .text-container img {
+    .text-container img.center-wide {
         max-width: 100%;
         margin-left: 0;
         margin-right: 0;
-        border: 1px solid #333;
     }
+
+    .text-container img.left-offset {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        float: none;
+    }
+
+    .metadata-container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .metadata-container .metadata {
+        width: 100%;
+    }
+
   } 
   
