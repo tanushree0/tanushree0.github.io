@@ -3,111 +3,132 @@
   <head>
     <meta charset="UTF-8" />
     <title>Tanushree Jindal</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-
-    <link
-      href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="css/ionicons.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-
-    <script>
-      (function(i, s, o, g, r, a, m) {
-        i["GoogleAnalyticsObject"] = r;
-        (i[r] =
-          i[r] ||
-          function() {
-            (i[r].q = i[r].q || []).push(arguments);
-          }),
-          (i[r].l = 1 * new Date());
-        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m);
-      })(
-        window,
-        document,
-        "script",
-        "https://www.google-analytics.com/analytics.js",
-        "ga"
-      );
-
-      ga("create", "UA-100063818-1", "auto");
-      ga("send", "pageview");
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="css/type.css" rel="stylesheet">
+    <link href="css/layout.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@400;600;700&display=swap" rel="stylesheet"> 
+    <script type="text/javascript" src="js/main.js"></script>
   </head>
-  <body>
-    <header>
-      <div class="wrapper">
-        <div class="flex-container">
-          <!-- <a href="#home"><h1>TJ</h1></a> -->
-          <nav class="nav">
-            <!-- <ul>
-              <li><a href="#home" class="home active">Home</a></li>
-              <li><a href="#projects" class="projects">Projects</a></li>
-              <li><a href="#about" class="about">About</a></li>
-              <li><a href="#contact" class="contact">Contact</a></li>
-            </ul> -->
-          </nav>
-        </div>
+  <body class="body-home">
+    <!-- <header>
+      <div class="content">
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#recent-work">Recent work</a>
+          <a href="#about-me">About me</a>
+        </nav>
       </div>
-    </header>
-
-    <div class="main-content-wrapper">
-      <div class="invisible-header-proxy"></div>
-
-      <div class="about-me section scrollspy-section" id="about">
-        <div class="wrapper">
-          <div class="flex-container">
-            <div class="text section-column">
-              <h3>Hello.👋</h3>
-              <p>
-               Thanks for visiting. This is an in-progress page for Listening Tree. Come back in January 2021.
-             </p>
+    </header> -->
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-content content">
+          <div>
+            <h1> Hi! I am Tanushree.</h1>
+            <p class="subtitle">I'm a user researcher based in India.</p>
+            <p class="subtitle">
+              I practice <span class="highlight">iterative</span> research, <span class="highlight">listen deeply</span> to users, and help create a <span class="highlight">user-centred mindset</span> in the team.
+            </p>
+            <div class="icon-images">
+              <a><img src="images/mail.svg" alt="Email"></a>
+            <a><img src="images/logo-twitter.svg" alt="Twitter"></a>
+            <a><img src="images/logo-linkedin.svg" alt="LinkedIn"></a>
             </div>
-            <div class=" section-column"></div>
+            <button> Scroll to view work &darr;</button>
+          </div>
+          <img class="profile" src="images/home/profile-picture-bw.jpeg">
+        </div>
+      </section>
+      <section id="recent-work" class="section">
+        <div class="content">
+          <h1 class="title-recent-work">Recent work</h1>
+          <div class="case-studies">
+            <div class="case-study">
+              <div class="column image">
+                <!-- <img src="https://via.placeholder.com/500x300.jpg/EEEEEE"/> -->
+                <img src="images/home/cs1-conducting-remote-interview-2.jpg"/>
+              </div>
+              <div class="column text">
+                <h3>Improving the process of making reminder calls to patients </h3>
+                <!-- <p>We conducted generative research with the staff at National Heart Foundation, Bangladesh to improve how reminder calls are made to patients.</p> -->
+                <p class="tags"><span class="tag">Generative research</span><span class="tag">Remote research</span><span class="tag">Diary study</span></p>
+                <a href="case-study/improving-process-of-calling-patients/index.html" class="button-container"><button>Read more &rarr; </button></a>
+              </div>
+            </div>
+            <div class="case-study">
+              <div class="column image">
+                <img src="images/home/role-playing-daniel-pragati.jpg"/>
+              </div>
+              <div class="column text">
+                <h3>Role-play as a method for sharing research findings</h3>
+                <!-- <p>We simulated a hypertension clinic in our office, and that helped the team deeply understand the workflows of their users.</p> -->
+                <p class="tags"><span class="tag">Role-playing</span><span class="tag">Field study</span><span class="tag">Communicating findings</span></p>
+                <a href="case-study/role-play-for-sharing-findings/index.html" class="button-container"><button>Read more &rarr; </button></a>
+              </div>
+            </div>
+            <div class="case-study">
+              <div class="column image">
+                <img src="images/home/shinder-nurse-bathinda.jpg"/>
+              </div>
+              <div class="column text">
+                <h3>Longitudinal satisfaction surveys with customers in rural India</h3>
+                <p class="tags"><span class="tag">Satisfaction surveys</span><span class="tag">Remote research</span><span class="tag">Iterative research</span></p>
+                <a href="case-study/longitudinal-satisfaction-survey/index.html" class="button-container"><button>Read more &rarr; </button></a>
+              </div>
+            </div>
+           
+            <div class="three-case-studies">
+              <div class="case-study">
+                <div class="column image">
+                  <img src="images/home/telangana-sprint-study.jpg"/>
+                </div>
+                <div class="column text">
+                  <h4>Testing a health message intervention for effectiveness and retention</h3>
+                  <p class="tags"><span class="tag">Evaluative research</span><span class="tag">Design sprint</span><span class="tag">Field study</span></p>
+                  <button>Read more &rarr;</button>
+                </div>
+              </div>
+              <div class="case-study">
+                <div class="column image">
+                  <img src="images/home/usability-study-office.jpg"/>
+                </div>
+                <div class="column text">
+                  <h4>Designing onboarding for users of a healthcare app in rural India</h3>
+                  <p class="tags"><span class="tag">Contextual inquiry</span><span class="tag">Usability testing</span><span class="tag">Iterative research</span></p>
+                  <button>Coming soon</button>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <footer id="contact" class="section scrollspy-section">
-      <div class="wrapper">
-        <div class="flex-container">
-          <div class="email"></div>
-
-          <div class="copyright section-column">
-            <div class="social-media">
-              <!--<a href=""><span>Resume</span></a>-->
-              <a href="https://www.linkedin.com/in/tanushreejindal/"
-                ><span><i class="icon ion-social-linkedin-outline"></i></span
-              ></a>
-              <a href="https://twitter.com/tanushree"
-                ><span><i class="icon ion-social-twitter"></i></span
-              ></a>
-              <a href="mailto:hello@tanushree.jindal@gmail.com" class="email"
-                ><span><i class="icon ion-ios-email"></i></span
-              ></a>
+      </section>
+      <!-- <section class="about-me section" id="about-me">
+        <div class="content">
+          <h1>About me</h1>
+          <div class="container">
+            <div class="text">
+              <p>I have 8 years of experience in the IT industry and hold a Master's from the School of Information, University of California, Berkeley. I bring a breadth of experience through my work and education — from <span class="highlight">user research</span> to <span class="highlight">web development</span> to <span class="highlight">expressive arts facilitation</span>.
+  
+                <p> I'm especially looking to team up on projects related to <span class="highlight">Next Billion Users</span> and <span class="highlight">EdTech</span>. Say hello if you'd like to chat or collaborate! 👋 </p>
             </div>
-
-            <span>&copy; 2020 | Tanushree Jindal</span>
+            <div class="icons">
+              <h4>Contact</h4>
+              <div class="icon-images">
+                <a><img src="images/mail.svg" alt="Email"></a>
+              <a><img src="images/logo-twitter.svg" alt="Twitter"></a>
+              <a><img src="images/logo-linkedin.svg" alt="LinkedIn"></a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </section> -->
+    </main>
+
+    <footer>
     </footer>
-
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-
-    <!--Note: The function findElements has been modified by Tanushree in this file-->
-    <script type="text/javascript" src="js/scrollspy.js"></script>
-
-    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

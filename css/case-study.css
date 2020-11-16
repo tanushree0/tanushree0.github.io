@@ -1,0 +1,78 @@
+header nav, header .content {
+    height: 100%;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav a {
+    padding-right: 50px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+header a.header-back {
+    cursor: pointer;
+}
+
+
+.case-study-detailed {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.case-study-detailed .content {
+    max-width: 680px;
+}
+
+.case-study-detailed .subtitle {
+    color: #666;
+    font-size: 22px;
+}
+
+.metadata-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* background: #E1F5FE; */
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 30px;
+    border: 4px solid #E1F5FE;
+    background: #fafafa;
+
+    margin-left: -20%;
+    margin-right: -20%;
+}
+
+.metadata-container .metadata {
+    width: 32%;
+}
+
+.metadata h6 {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.metadata-container p:not(:last-child) {
+    margin-bottom: 0;
+}
+
+/* .text-container h3 {
+    font-size: 18px;
+    font-weight: 600;
+} */
+
+.text-container img {
+    max-width: 140%;
+    margin-left: -20%;
+    margin-right: -20%;
+    border: 1px solid #333;
+}
