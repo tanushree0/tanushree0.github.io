@@ -51,15 +51,21 @@ section.hero {
     flex-direction: row-reverse;
 }
 
+p.hero-collaborate-title {
+    margin-bottom:10px;
+    margin-top: 60px;
+}
+
 /* Section: Recent Work */
 
 .title-recent-work {
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 400;
     color: grey;
 
     margin-bottom: 30px;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .case-studies {
