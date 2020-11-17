@@ -102,13 +102,13 @@
         font-size: 16px;
     }
 
-    .text-container img.center-wide {
+    .text-container figure.center-wide {
         max-width: 100%;
         margin-left: 0;
         margin-right: 0;
     }
 
-    .text-container img.left-offset {
+    .text-container figure.left-offset {
         max-width: 100%;
         margin-left: 0;
         margin-right: 0;

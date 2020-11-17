@@ -82,7 +82,8 @@ p.hero-collaborate-title {
 .case-study {
     display: flex;
     flex-direction: row-reverse;
-    margin-bottom: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 /* .case-study .column {
@@ -105,6 +106,7 @@ p.hero-collaborate-title {
 .case-study .column.image {
     width: 50%;
     max-height: 260px;
+    /* padding-left: 30px; */
 }
 
 .case-study .column.image img {
@@ -134,11 +136,11 @@ p.hero-collaborate-title {
 }
 
 .three-case-studies .case-study:not(:last-child) {
-    margin-right: 15px;
+    margin-right: 30px;
 }
 
 .three-case-studies .case-study:not(:first-child) {
-    margin-left: 15px;
+    margin-left: 30px;
 }
 
 .three-case-studies .case-study .column.image {

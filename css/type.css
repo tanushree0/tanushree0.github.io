@@ -92,6 +92,12 @@ a {
     letter-spacing: 0.5px;
 }
 
+figcaption {
+    text-align: center;
+    color: grey;
+    font-size: 14px;
+}
+
 blockquote {
     font-style: italic;
     font-weight: 500;
@@ -109,3 +115,4 @@ blockquote:before{
 blockquote:after{
     content: "”";
 }
+

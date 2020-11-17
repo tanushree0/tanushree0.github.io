@@ -1,3 +1,7 @@
+figure {
+    margin: 0;
+}
+
 header {
     height: 50px;
     width: 100%;
@@ -40,4 +44,10 @@ footer {
 
 .clear {
     clear: both;
+}
+
+div.separator {
+    border-bottom: 1px solid #ccc;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
