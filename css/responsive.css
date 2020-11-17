@@ -48,6 +48,10 @@
         font-weight: 300;
     }
 
+    figcaption {
+        font-size: 11px;
+    }
+
     #home .hero-content img {
         display: none;
     }
