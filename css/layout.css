@@ -25,9 +25,6 @@ header nav {
 header nav a {
     padding-right: 50px;
     text-decoration: none;
-    color: black;
-    font-size: 18px;
-    /* font-weight: 400; */
 }
 
 header nav a.selected {

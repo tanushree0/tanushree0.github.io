@@ -1,10 +1,5 @@
 
 
-.case-study-detailed {
-    /* padding-top: 0;
-    padding-bottom: 0; */
-}
-
 .case-study-detailed .content {
     max-width: 680px;
 }
@@ -12,6 +7,8 @@
 .case-study-detailed .subtitle {
     color: #666;
     font-size: 22px;
+    margin-top: 1.36em;
+    margin-bottom: 1.36em;
 }
 
 .case-study-detailed .case-study-date {
