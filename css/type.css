@@ -27,6 +27,7 @@ h3 {
     font-size: 30px;
     font-weight: 500;
     letter-spacing: -1px;
+
 }
 
 h4 {
@@ -78,7 +79,7 @@ button:hover {
 }
 
 a {
-    font-family: 'IBM Plex Sans', sans-serif
+    font-family: 'IBM Plex Sans', sans-serif;
     color: black;
     font-weight: 400;
     letter-spacing: 0.5px;
