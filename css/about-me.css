@@ -1,7 +1,20 @@
-.about-me .content {
+.main-about-me .content {
     max-width: 680px;
 }
 
-.body-about-me .highlight {
-    background: #E1F5FE;
+.main-about-me .highlight {
+    /* background: #E1F5FE; */
+}
+
+.main-about-me .logo-images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.logo-images img {
+    /* width: 200px; */
+    height: 40px;
+    margin-right: 30px;
+    margin-bottom: 30px;
 }
