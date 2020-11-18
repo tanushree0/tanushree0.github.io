@@ -30,6 +30,10 @@ header nav a {
     /* font-weight: 400; */
 }
 
+header nav a.selected {
+    font-weight: 600;
+}
+
 header a.header-back {
     cursor: pointer;
 }
