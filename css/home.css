@@ -1,6 +1,9 @@
 /* 
 Style for the Home Page
 */
+.main-home section {
+    padding-top: 60px; padding-bottom: 60px;
+}
 
 /* Section: Hero */
 section.hero {
@@ -64,7 +67,7 @@ p.hero-collaborate-title {
     font-size: 18px;
     font-weight: 400;
     color: grey;
-
+    margin-bottom: 5px;
     /* margin-bottom: 30px; */
     font-family: 'IBM Plex Sans', sans-serif;
 }
@@ -75,7 +78,7 @@ p.hero-collaborate-title {
     flex-direction: column;
 }
 
-.three-case-studies {
+.secondary-case-studies {
     display: flex;
     flex-direction: row;
 }
@@ -87,13 +90,11 @@ p.hero-collaborate-title {
     margin-bottom: 30px;
 }
 
-/* .case-study .column {
-    width: 50%;
+/* .case-study.primary:first-child {
+    margin-top: 20px;
 } */
 
-
-
-.case-study h3 {
+.case-study h3, .case-study h4 {
     margin: 0;
 }
 
@@ -125,10 +126,10 @@ p.hero-collaborate-title {
 
 .case-study .button-container {
     align-self: start;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
-.three-case-studies .case-study {
+.secondary-case-studies .case-study {
     flex-direction: column;
     justify-content: flex-start;
     max-width: 50%;
@@ -136,63 +137,31 @@ p.hero-collaborate-title {
     /* max-height: 330px; */
 }
 
-.three-case-studies .case-study:not(:last-child) {
+.secondary-case-studies .case-study:not(:last-child) {
     margin-right: 30px;
 }
 
-.three-case-studies .case-study:not(:first-child) {
+.secondary-case-studies .case-study:not(:first-child) {
     margin-left: 30px;
 }
 
-.three-case-studies .case-study .column.image {
+.secondary-case-studies .case-study .column.image {
     width: 100%;
     max-height: 280px;
 }
 
-.three-case-studies .case-study .column.text {
+.secondary-case-studies .case-study .column.text {
     width: 100%;
     padding-left: 0;
-    padding-top: 30px;
+    padding-top: 15px;
 }
 
 
-.three-case-studies .column.text button {
+.secondary-case-studies .column.text button {
     width: max-content;
 }
 
-.three-case-studies img {
+.secondary-case-studies img {
     margin-bottom: 20px;
 }
 
-/* Section: About Me */
-
-.about-me {
-    background: #E1F5FE;
-    /* padding-top: 100px;
-    padding-bottom: 100px; */
-    margin-bottom:0;
-}
-
-.about-me .container {
-    display: flex;
-    flex-direction: column;
-}
-
-.about-me .text {
-    width: 75%;
-}
-
-.about-me .icon-images {
-    display: flex;
-    flex-direction: row;
-    /* margin-left: 30px; */
-}
-
-.about-me .icons img{
-    height: 30px;
-    margin-right: 15px;
-}
-
-/* a.active {
-    font-weight: 500;
-} */
