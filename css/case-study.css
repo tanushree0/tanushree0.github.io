@@ -34,6 +34,18 @@ header a.header-back {
     font-size: 22px;
 }
 
+.case-study-detailed .case-study-date {
+    color: #666;
+    font-size: 18px;
+    display: block;
+    margin-top:-30px;
+   
+}
+
+.case-study-detailed .case-study-date a {
+    color: #666;
+}
+
 .metadata-container {
     display: flex;
     flex-direction: row;
