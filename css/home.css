@@ -53,10 +53,6 @@ p.hero-collaborate-title {
 /* Section: Recent Work */
 
 .title-recent-work {
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 400;
-    color: var(--grey2);
     margin-bottom: 5px;
 }
 
