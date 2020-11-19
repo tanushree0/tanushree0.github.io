@@ -1,3 +1,14 @@
+/* Variables */
+
+:root {
+    --header-height: 60px;
+    --blue0: #E1F5FE;
+    --blue1: #B3E5FC;
+    --grey2: #757575;
+    --grey1: #BDBDBD;
+    --pink2: #C2185B;
+}
+
 body,
 p,
 ul,
@@ -59,7 +70,7 @@ h4 {
     margin-right: 5px;
     margin-bottom: 10px;
     padding: 3px;
-    color: grey;
+    color: var(--grey2);
 }
 
 .tag:not(:last-child):after {
@@ -72,15 +83,14 @@ p.tags {
 }
 
 button {
-    font-family: 'IBM Plex Sans', sans-serif;
     background-color: white;
-    padding: 10px 20px;
     border: 1px solid black;
+    padding: 10px 20px;
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 400;
-    cursor: pointer;
     letter-spacing: 0.5px;
+    cursor: pointer;
 }
 
 button:hover {
@@ -94,7 +104,7 @@ a {
 }
 
 a:hover {
-    color: #C2185B;
+    color: var(--pink2);
 }
 
 figcaption {
@@ -107,16 +117,8 @@ blockquote {
     font-style: italic;
     font-weight: 500;
     margin-left: 0;
-    border-left: 10px solid #E1F5FE;
+    border-left: 4px solid var(--blue1);
     padding-left: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
-}
-
-blockquote:before {
-    content: "“";
-}
-
-blockquote:after {
-    content: "”";
 }

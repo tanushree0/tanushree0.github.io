@@ -4,6 +4,8 @@
     --header-height: 60px;
     --blue0: #E1F5FE;
     --blue1: #B3E5FC;
+    --grey2: #757575;
+    --grey1: #BDBDBD;
 }
 
 * {
@@ -84,7 +86,7 @@ img {
 
 footer {
     margin-top: 30px;
-    background-color: #B3E5FC;
+    background-color: var(--blue1);
     height: 120px;
     text-align: center;
     display: flex;
@@ -97,7 +99,7 @@ footer {
 }
 
 div.separator {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--grey1);
     margin-top: 30px;
     margin-bottom: 30px;
 }
