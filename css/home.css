@@ -8,7 +8,6 @@
     --grey1: #BDBDBD;
 }
 
-
 /* 
 Style for the Home Page
 */
@@ -17,7 +16,6 @@ Style for the Home Page
     padding-top: 60px;
     padding-bottom: 60px;
 }
-
 
 /* Section: Hero */
 
@@ -49,11 +47,10 @@ p.hero-collaborate-title {
     margin-top: 60px;
 }
 
-
 /* Section: Recent Work */
 
 .title-recent-work {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .case-studies {
@@ -61,80 +58,77 @@ p.hero-collaborate-title {
     flex-direction: column;
 }
 
-.secondary-case-studies {
-    display: flex;
-    flex-direction: row;
-}
-
 .case-study {
     display: flex;
     flex-direction: row-reverse;
-    margin-top: 30px;
+    margin-top: 15px;
     margin-bottom: 30px;
 }
 
-.case-study h3,
-.case-study h4 {
+.case-study h3, .case-study h4 {
     margin: 0;
 }
 
 .case-study .column.text {
-    padding-right: 30px;
+    padding-right: 15px;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    width: 50%;
 }
 
 .case-study .column.image {
+    padding-left: 15px;
     width: 50%;
-    max-height: 260px;
     /* padding-left: 30px; */
 }
 
 .case-study .column.image img {
     max-width: 100%;
+    max-height: 260px;
     height: 100%;
+    width: 100%;
     object-fit: cover;
     object-position: top;
-    width: 100%;
-    max-height: 100%;
 }
 
 .case-study .button-container {
     align-self: start;
-    margin-top: 30px;
+    margin-top: 20px;
+}
+
+.secondary-case-studies {
+    display: flex;
+    flex-direction: row;
 }
 
 .secondary-case-studies .case-study {
     flex-direction: column;
     justify-content: flex-start;
-    max-width: 50%;
+    width: 50%;
     margin-bottom: unset;
 }
 
 .secondary-case-studies .case-study:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 15px;
 }
 
 .secondary-case-studies .case-study:not(:first-child) {
-    margin-left: 30px;
+    margin-left: 15px;
 }
 
 .secondary-case-studies .case-study .column.image {
     width: 100%;
-    max-height: 280px;
+    /* margin-bottom: 20px; */
+    padding-left: unset;
 }
 
 .secondary-case-studies .case-study .column.text {
     width: 100%;
     padding-left: 0;
     padding-top: 15px;
+    padding-right: unset;
 }
 
 .secondary-case-studies .column.text button {
     width: max-content;
-}
-
-.secondary-case-studies img {
-    margin-bottom: 20px;
 }

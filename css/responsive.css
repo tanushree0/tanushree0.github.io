@@ -69,11 +69,13 @@
     }
     .case-study .column.image {
         width: 100%;
+        padding-left: 0;
     }
     .case-study .column.text {
         width: 100%;
         padding-left: 0;
-        padding-top: 20px;
+        padding-top: 15px;
+        padding-right: 0;
     }
     .case-study .button-container {
         margin-top: 0;
@@ -82,8 +84,8 @@
         flex-direction: column;
     }
     .secondary-case-studies .case-study {
-        max-width: 100%;
-        margin-bottom: 20px;
+        width: 100%;
+        margin-bottom: 30px;
     }
     .secondary-case-studies .case-study h4 {
         /* Include h3 style */
