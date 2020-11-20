@@ -123,7 +123,7 @@
     }
     /* About me page */
     .main-about-me .logo-images {
-        margin: auto;
+        margin: 20px auto 0;
     }
     .main-about-me .logo-images img {
         /* width: 200px; */
