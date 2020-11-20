@@ -1,3 +1,30 @@
+/* Tablet layout */
+
+@media screen and (min-width: 600px) and (max-width: 1040px) {
+    .text-container figure.center-wide {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .text-container figure.left-offset {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        float: none;
+    }
+    .metadata-container {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .main-about-me .logo-images {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Mobile layout */
+
 @media screen and (max-width: 600px) {
     body, p, ul, li, blockquote, .body1 {
         font-size: 14px;
