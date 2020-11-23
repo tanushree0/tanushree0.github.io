@@ -94,6 +94,7 @@ p.hero-collaborate-title {
 .case-study .button-container {
     align-self: start;
     margin-top: 20px;
+    display: block;
 }
 
 .secondary-case-studies {
@@ -104,7 +105,7 @@ p.hero-collaborate-title {
 .secondary-case-studies .case-study {
     flex-direction: column;
     justify-content: flex-start;
-    width: 50%;
+    width: 33.333333%;
     margin-bottom: unset;
 }
 
@@ -131,4 +132,13 @@ p.hero-collaborate-title {
 
 .secondary-case-studies .column.text button {
     width: max-content;
+}
+
+.secondary-case-studies .case-study.about-me {
+    /* background: #F8BBD0; */
+    /* border: 1px solid var(--grey2); */
+    background: #E1F5FE;
+    border-radius: 2%;
+    justify-content: center;
+    align-items: center;
 }
