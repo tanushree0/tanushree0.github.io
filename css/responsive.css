@@ -122,6 +122,12 @@
         margin-left: 0;
         margin-right: 0;
     }
+    .secondary-case-studies .case-study.about-me {
+        padding: 30px;
+    }
+    .secondary-case-studies .case-study.about-me h4 {
+        margin-bottom: 15px;
+    }
     /* Case study page */
     .case-study-detailed .subtitle {
         font-size: 16px;
