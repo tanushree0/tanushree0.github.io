@@ -1,3 +1,11 @@
+:root {
+    --header-height: 60px;
+    --blue0: #E1F5FE;
+    --blue1: #B3E5FC;
+    --grey2: #757575;
+    --grey1: #BDBDBD;
+}
+
 .main-about-me .content {
     max-width: 680px;
     margin: auto;
@@ -20,4 +28,20 @@
 
 .main-about-me .text-container {
     max-width: 680px;
+}
+
+.main-about-me .card-contact {
+    padding: 30px;
+    background: var(--blue0);
+    border-radius: 2%;
+}
+
+.main-about-me .card-contact h2 {
+    margin-top: 0;
+}
+
+.main-about-me .card-contact .button-container {
+    display: block;
+    margin-top: 20px;
+    text-align: right;
 }
