@@ -111,6 +111,12 @@ figure.center-wide {
     margin-right: -180px;
 }
 
+figure.center-small {
+    max-width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 figure.left-offset {
     max-width: 75%;
     float: left;
