@@ -91,3 +91,9 @@
 .read-next-content .read-next-article-heading-a * {
     margin-top: 0;
 }
+
+/* Specific  case studies */
+
+figure.final-design-screenshot {
+    max-width: 50%;
+}

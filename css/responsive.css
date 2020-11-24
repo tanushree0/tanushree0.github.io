@@ -164,4 +164,7 @@
         margin-right: 20px;
         margin-bottom: 20px;
     }
+    .text-container figure.final-design-screenshot {
+        max-width: 50%;
+    }
 }
