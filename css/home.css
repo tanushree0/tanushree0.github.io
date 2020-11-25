@@ -69,6 +69,16 @@ p.hero-collaborate-title {
     margin: 0;
 }
 
+.case-study .case-study-title a {
+    text-decoration: none;
+    /* Unsets the letter-spacing that is applied for 'a' for the rest of the document */
+    letter-spacing: unset;
+}
+
+.case-study .case-study-title a:hover {
+    color: unset;
+}
+
 .case-study .column.text {
     padding-right: 15px;
     width: 50%;
