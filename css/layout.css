@@ -125,6 +125,14 @@ figure.left-offset {
     margin-left: -180px;
 }
 
+figure.left-offset-50-percent {
+    max-width: 50%;
+    float: left;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-left: -180px;
+}
+
 figure {
     margin-bottom: 20px;
 }
