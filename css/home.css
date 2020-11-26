@@ -101,6 +101,10 @@ p.hero-collaborate-title {
     object-position: top;
 }
 
+.secondary-case-studies .case-study .column.image img {
+    max-height: 220px;
+}
+
 .case-study .button-container {
     align-self: start;
     margin-top: 20px;
