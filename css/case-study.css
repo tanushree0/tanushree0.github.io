@@ -32,6 +32,20 @@
     color: var(--grey2);
 }
 
+.case-study-detailed h1 {
+    /* font-weight: 600; */
+}
+
+.case-study-detailed h4 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.case-study-detailed h5 {
+    /* font-size: 28px; */
+    font-weight: 600;
+}
+
 .metadata-container {
     display: flex;
     flex-direction: row;
