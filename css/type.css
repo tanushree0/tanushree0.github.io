@@ -134,3 +134,7 @@ blockquote {
 .text-grey {
     color: var(--grey2);
 }
+
+.highlight {
+    font-weight: 500;
+}
