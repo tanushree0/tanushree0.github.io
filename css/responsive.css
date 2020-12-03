@@ -173,6 +173,9 @@
         margin-right: 20px;
         margin-bottom: 20px;
     }
+    .main-about-me .logo-images img.logo-black-baza {
+        height: 25px;
+    }
     .text-container figure.final-design-screenshot {
         max-width: 50%;
     }
