@@ -62,10 +62,10 @@ p.hero-collaborate-title {
     display: flex;
     flex-direction: row-reverse;
     margin-top: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
 }
 
-.case-study h3, .case-study h4 {
+.case-study h2, .case-study h3 {
     margin: 0;
 }
 
@@ -125,11 +125,11 @@ p.hero-collaborate-title {
 }
 
 .secondary-case-studies .case-study:not(:last-child) {
-    margin-right: 15px;
+    margin-right: 22.5px;
 }
 
 .secondary-case-studies .case-study:not(:first-child) {
-    margin-left: 15px;
+    margin-left: 22.5px;
 }
 
 .secondary-case-studies .case-study .column.image {

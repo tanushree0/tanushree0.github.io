@@ -33,17 +33,17 @@
         font-size: 30px;
     }
     h2 {
-        font-size: 26px;
-    }
-    h3 {
         font-size: 22px;
     }
-    h4 {
+    h3 {
+        font-size: 16px;
+    }
+    /* h4 {
         font-size: 18px;
     }
     h5 {
         font-size: 16px;
-    }
+    } */
     h6 {
         font-size: 14px;
     }
@@ -120,9 +120,9 @@
         width: 100%;
         margin-bottom: 30px;
     }
-    .secondary-case-studies .case-study h4 {
+    .secondary-case-studies .case-study h3 {
         /* Include h3 style */
-        font-size: 24px;
+        font-size: 22px;
     }
     .secondary-case-studies .case-study:not(:first-child) {
         margin-left: 0;
@@ -135,9 +135,6 @@
         margin-bottom: 15px;
     }
     /* Case study page */
-    .case-study-detailed h4 {
-        font-size: 20px;
-    }
     .case-study-detailed .subtitle {
         font-size: 16px;
     }
