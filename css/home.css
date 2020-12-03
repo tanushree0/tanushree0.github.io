@@ -93,6 +93,7 @@ p.hero-collaborate-title {
 }
 
 .case-study .column.image img {
+    display: block;
     max-width: 100%;
     max-height: 260px;
     height: 100%;
@@ -102,7 +103,7 @@ p.hero-collaborate-title {
 }
 
 .secondary-case-studies .case-study .column.image img {
-    max-height: 200px;
+    max-height: 180px;
 }
 
 .case-study .button-container {
