@@ -41,6 +41,12 @@
     h4 {
         font-size: 18px;
     }
+    h5 {
+        font-size: 16px;
+    }
+    h6 {
+        font-size: 14px;
+    }
     .subtitle {
         font-size: 16px;
     }
@@ -129,6 +135,9 @@
         margin-bottom: 15px;
     }
     /* Case study page */
+    .case-study-detailed h4 {
+        font-size: 20px;
+    }
     .case-study-detailed .subtitle {
         font-size: 16px;
     }
