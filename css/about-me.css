@@ -9,7 +9,7 @@
 .main-about-me .content {
     max-width: 680px;
     margin: auto;
-    padding-top: 42px;
+    /* padding-top: 42px; */
 }
 
 .main-about-me .logo-images {
