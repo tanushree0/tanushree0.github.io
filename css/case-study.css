@@ -6,6 +6,7 @@
     --blue1: #B3E5FC;
     --grey2: #757575;
     --grey1: #BDBDBD;
+    --greyhalf: #EEEEEE;
     --grey0: #FAFAFA;
     --pink2: #C2185B;
 }
@@ -76,8 +77,8 @@
 
 .read-next {
     /* Same as Contact Me card */
-    padding: 30px 45px;
-    background: var(--blue0);
+    padding: 30px;
+    background: var(--greyhalf);
     border-radius: 1%;
 }
 
@@ -97,10 +98,12 @@
 
 .read-next-content .read-next-article-img-a {
     max-width: 25%;
+    margin-left: 10px;
 }
 
 .read-next-content .read-next-article-heading-a {
     text-decoration: none;
+    margin-right: 10px;
 }
 
 .read-next-content .read-next-article-heading-a * {
