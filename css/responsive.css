@@ -156,9 +156,14 @@
     .metadata-container {
         margin-left: 0;
         margin-right: 0;
+        padding: 30px;
     }
     .metadata-container .metadata {
         width: 100%;
+    }
+    .read-next {
+        /* Same as Contact Me card */
+        padding: 20px 30px;
     }
     /* About me page */
     .main-about-me .logo-images {
@@ -175,5 +180,8 @@
     }
     .text-container figure.final-design-screenshot {
         max-width: 50%;
+    }
+    .main-about-me .card-contact {
+        padding: 20px 30px;
     }
 }
