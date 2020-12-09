@@ -84,6 +84,14 @@
         font-size: 18px;
         padding-left: 20px;
     }
+    .cta .content {
+        width: 100%;
+        text-align: center;
+    }
+    .cta .content button {
+        background: white;
+        color: black;
+    }
     /* Home page */
     .main-home section.hero {
         padding: 90px 0;
