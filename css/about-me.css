@@ -5,6 +5,7 @@
     --grey2: #757575;
     --grey1: #BDBDBD;
     --grey0: #FAFAFA;
+    --greyhalf: #EEEEEE;
 }
 
 .main-about-me .content {
@@ -38,7 +39,7 @@
 
 .main-about-me .card-contact {
     padding: 30px;
-    background: var(--blue0);
+    background: var(--greyhalf);
     border-radius: 1%;
 }
 
