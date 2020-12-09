@@ -113,27 +113,6 @@
     .case-study .button-container {
         margin-top: 0;
     }
-    .secondary-case-studies {
-        flex-direction: column;
-    }
-    .secondary-case-studies .case-study {
-        width: 100%;
-        margin-bottom: 30px;
-    }
-    .secondary-case-studies .case-study h3 {
-        /* Include h3 style */
-        font-size: 22px;
-    }
-    .secondary-case-studies .case-study:not(:first-child) {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .secondary-case-studies .case-study.about-me {
-        padding: 30px;
-    }
-    .secondary-case-studies .case-study.about-me h4 {
-        margin-bottom: 15px;
-    }
     /* Case study page */
     .case-study-detailed .subtitle {
         font-size: 16px;

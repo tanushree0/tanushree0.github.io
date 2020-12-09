@@ -6,6 +6,7 @@
     --blue1: #B3E5FC;
     --grey2: #757575;
     --grey1: #BDBDBD;
+    --greyhalf: #EEEEEE;
 }
 
 /* 
@@ -100,60 +101,4 @@ p.hero-collaborate-title {
     width: 100%;
     object-fit: cover;
     object-position: top;
-}
-
-.secondary-case-studies .case-study .column.image img {
-    max-height: 180px;
-}
-
-.case-study .button-container {
-    align-self: start;
-    margin-top: 20px;
-    display: block;
-}
-
-.secondary-case-studies {
-    display: flex;
-    flex-direction: row;
-}
-
-.secondary-case-studies .case-study {
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 33.333333%;
-    margin-bottom: unset;
-}
-
-.secondary-case-studies .case-study:not(:last-child) {
-    margin-right: 22.5px;
-}
-
-.secondary-case-studies .case-study:not(:first-child) {
-    margin-left: 22.5px;
-}
-
-.secondary-case-studies .case-study .column.image {
-    width: 100%;
-    /* margin-bottom: 20px; */
-    padding-left: unset;
-}
-
-.secondary-case-studies .case-study .column.text {
-    width: 100%;
-    padding-left: 0;
-    padding-top: 15px;
-    padding-right: unset;
-}
-
-.secondary-case-studies .column.text button {
-    width: max-content;
-}
-
-.secondary-case-studies .case-study.about-me {
-    /* background: #F8BBD0; */
-    /* border: 1px solid var(--grey2); */
-    background: #E1F5FE;
-    border-radius: 1%;
-    justify-content: center;
-    align-items: center;
 }
